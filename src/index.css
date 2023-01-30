@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,101 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #283148;
+  font-family: Vazirmatn;
+  
+}
+.linkstyle{
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: Vazirmatn;
+  color: #EAF0FF;
+}
+
+.linkstyle:hover{
+  color:#FDBE34;
+  border-bottom: 1px solid #FDBE34;
+}
+.blur{
+  position: absolute;
+  width:250px;
+  height:60px;
+  top:1210px;
+  backdrop-filter: blur(11px);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 16px;
+  background-color: rgba(0,0,0, 0.4)
+}
+.blurTopRow{
+  position: absolute;
+  width:250px;
+  height:60px;
+  top:990px;
+  backdrop-filter: blur(11px);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 16px;
+  background-color: rgba(0,0,0, 0.4)
+}
+.courseImg{
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px
+}
+.softwareIcon{
+  width: 80px;
+  height: 80px;
+}
+
+.blurSoftwareName{
+  position: absolute;
+  width:220px;
+  height:70px;
+  top:1950px;
+  backdrop-filter: blur(11px);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 25px;
+  background-color: rgba(0,0,0, 0.4);
+  visibility: hidden;
+}
+.blurSoftwarename{
+  position: absolute;
+  width:220px;
+  height:70px;
+  top:1740px;
+  backdrop-filter: blur(11px);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 25px;
+  background-color: rgba(0,0,0, 0.4);
+  visibility: hidden;
+  cursor: pointer;
+}
+.blurSoftwarename:hover{
+  visibility: initial;
+}
+.linkstylesoftware{
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: Vazirmatn;
+  color: #EAF0FF;
 }
