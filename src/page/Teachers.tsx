@@ -5,10 +5,10 @@ import Teachers2 from '../Assets/Teachers/Teachers2.png';
 import Teachers3 from '../Assets/Teachers/Teachers3.png';
 import {Link} from 'react-router-dom'
 const img = [
-  {
-    img: Teachers1,
-    name:"طراحي"
-  },
+  // {
+  //   img: Teachers1,
+  //   name:"طراحي"
+  // },
   {
     img: Teachers3,
     name:"چنگيز مرادي"
@@ -85,9 +85,6 @@ const Teachers = () => {
         }
        
 </Box>
-
-
-
     </Box>
   )
 }

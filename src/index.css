@@ -169,3 +169,39 @@ body {
   border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.circle{
+  width: 529px;
+  height: 493px;
+  border-radius: 50%;
+  background: #ffda8a;
+  position: relative;
+
+}
+.Icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.circleIMG{
+position: absolute;
+width: 520px;;
+height: 521px;
+left: calc(50% - 389.59px/2 + 194.5px);
+}
+.labelFooter{
+  margin-left: 10px;
+  font-family: 'Vazirmatn';
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color:#323232;
+  line-height: 120%;
+  margin-top: 2px;
+}
+.about{
+  margin-top: 20px;
+  height: 85px;
+}

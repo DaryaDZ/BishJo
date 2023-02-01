@@ -3,7 +3,7 @@ import Introduction from './Introduction'
 import Courses from "./Courses";
 import Software from "./Software";
 import Teachers from "./Teachers";
-
+import Why from "./Why";
 
 
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
       <Courses />
       <Software />
       <Teachers />
+      <Why/>
    </>
   );
 };
