@@ -8,6 +8,7 @@ import MastersSignup from './components/MastersSignup';
 import SignupLayout from './components/SignupLayout';
 import LoginsLayout from './components/LoginsLayout';
 import MasterLogin from './components/MasterLogin';
+import Apply from './page/Apply';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path='apply' element={<Apply />} />
+
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            

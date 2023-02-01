@@ -22,7 +22,7 @@ function Signup() {
               نام کاربری
             </label>
             <TextField
-               placeholder=" ... نام کاربری خود را وارد کنید "
+               placeholder="  نام کاربری خود را وارد کنید... "
                type="text"
               sx={{
                 // width: openInput ? "450px" : "",
@@ -35,12 +35,14 @@ function Signup() {
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
+                direction: 'rtl',
+
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <PersonOutlineIcon />
                   </InputAdornment>
                 ),
@@ -62,7 +64,7 @@ function Signup() {
               {/* <PersonOutlineIcon /> */}
             </div>
             <TextField
-               placeholder=" ... ایمیل خود را وارد کنید "
+               placeholder=" ایمیل خود را وارد کنید...  "
                type="email"
               sx={{
                 // width: openInput ? "450px" : "",
@@ -75,12 +77,13 @@ function Signup() {
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
+                direction: 'rtl',
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <AlternateEmailIcon />
                   </InputAdornment>
                 ),
@@ -96,8 +99,7 @@ function Signup() {
               شماره تلفن
             </div>
             <TextField
-               placeholder=" ... شماره تلفن خود را وارد کنید "
-               type="number"
+               placeholder="  شماره تلفن خود را وارد کنید... "
               sx={{
                 // width: openInput ? "450px" : "",
                 width: "334px",
@@ -109,12 +111,13 @@ function Signup() {
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
+                direction: 'rtl',
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <EdgesensorHighIcon />
                   </InputAdornment>
                 ),
@@ -133,7 +136,7 @@ function Signup() {
               رمز عبور
             </div>
             <TextField
-               placeholder=" ... نام کاربری خود را وارد کنید "
+               placeholder=" رمز عبور خود را وارد کنید... "
                type="password"
               sx={{
                 // width: openInput ? "450px" : "",
@@ -146,12 +149,14 @@ function Signup() {
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
+                direction: 'rtl',
+
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <VpnKeyIcon />
                   </InputAdornment>
                 ),

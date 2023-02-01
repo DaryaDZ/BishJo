@@ -3,6 +3,7 @@ import "./Login.css";
 import { Button, TextField, InputAdornment } from "@mui/material";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
+import EdgesensorHighIcon from '@mui/icons-material/EdgesensorHigh';
 import Checkbox from "@mui/material/Checkbox";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
@@ -48,7 +49,7 @@ function MasterLogin() {
                 ),
                 endAdornment: (
                   <InputAdornment position="end">
-                    <PersonOutlineIcon />
+                    <EdgesensorHighIcon />
                   </InputAdornment>
                 ),
                 style:{
@@ -58,9 +59,9 @@ function MasterLogin() {
             />
         </div>
         <div>
-          <label className="text">رمز عبور</label>
+          <label className="text">کد یکبار مصرف </label>
           <TextField
-               placeholder=" ... رمز عبور خود را وارد کنید "
+               placeholder="کد یکبار مصرف ارسال شده را وارد کنید..."
                type="password"
               sx={{
                 // width: openInput ? "450px" : "",
@@ -73,12 +74,13 @@ function MasterLogin() {
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
+                direction: 'rtl',
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <VpnKeyIcon />
                   </InputAdornment>
                 ),

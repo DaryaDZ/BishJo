@@ -16,41 +16,46 @@ function Login() {
         <div className="inputsContainer">
           <label className="text">نام کاربری یا ایمیل یا شماره تلفن</label>
           <TextField
-               placeholder=" ... شماره تلفن یا نام کاربری خود را وارد کنید "
+               placeholder="  شماره تلفن یا نام کاربری خود را وارد کنید "
                type="text"
               sx={{
                 // width: openInput ? "450px" : "",
                 width: "334px",
                 // height: "60px",
-                textAlign: "right",
+                // textAlign: "right",
                 transition: "width 2s ease-in",
                 // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
-                justifyContent: 'center',
+                justifyContent: 'right',
                 color: '#1C1B1F',
+                direction: 'rtl',
+
 
 
               }}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
-                    <Button
-                    sx={{
-                      backgroundColor: "#fdbe34",
-                      color: "#323232",
-                    }}
-                    >
-                      دریافت کد
-                    </Button>
+                    <PersonOutlineIcon  />
                   </InputAdornment>
                 ),
                 endAdornment: (
                   <InputAdornment position="end">
-                    <PersonOutlineIcon />
+                    {/* <Button
+                    sx={{
+                      backgroundColor: "#fdbe34",
+                      color: "#323232",
+                      
+
+                    }}
+                    >
+                      دریافت کد
+                    </Button> */}
                   </InputAdornment>
                 ),
+            
                 style:{
                   height:"50px"
                 }
@@ -60,7 +65,7 @@ function Login() {
         <div>
           <label className="text">رمز عبور</label>
           <TextField
-               placeholder=" ... رمز عبور خود را وارد کنید "
+               placeholder=" رمز عبور خود را وارد کنید... "
                type="password"
               sx={{
                 // width: openInput ? "450px" : "",
@@ -72,13 +77,14 @@ function Login() {
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
-                justifyContent: 'center',
+                justifyContent: 'right',
+                direction: 'rtl',
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <VpnKeyIcon />
                   </InputAdornment>
                 ),

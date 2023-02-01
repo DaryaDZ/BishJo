@@ -15,7 +15,7 @@ function MastersSignup() {
           {/* <Label className='mastertext' >نام کاربری</Label> */}
           <label className="mastertext">نام کاربری</label>
           <TextField
-               placeholder=" ... نام کاربری خود را وارد کنید "
+               placeholder="  نام کاربری خود را وارد کنید... "
               sx={{
                 // width: openInput ? "450px" : "",
                 width: "334px",
@@ -27,12 +27,14 @@ function MastersSignup() {
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
+                direction: 'rtl',
+
 
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <PersonOutlineIcon />
                   </InputAdornment>
                 ),
@@ -49,7 +51,7 @@ function MastersSignup() {
         <div>
           <label className="mastertext">شماره تلفن </label>
           <TextField
-               placeholder=" ...شماره تلفن خود را وارد کنید "
+               placeholder=" شماره تلفن خود را وارد کنید... "
               sx={{
                 // width: openInput ? "450px" : "",
                 width: "334px",
@@ -59,12 +61,14 @@ function MastersSignup() {
                 // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
-                backgroundColor: "#eaf0ff"
+                backgroundColor: "#eaf0ff",
+                direction: 'rtl',
+
 
               }}
               InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
+                startAdornment: (
+                  <InputAdornment position="start">
                     <PhoneIphoneIcon />
                   </InputAdornment>
                 ),
