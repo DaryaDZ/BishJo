@@ -1,17 +1,20 @@
 .App {
-  position: relative;
-  width: 1440px;
+  /* position: relative; */
+  /* width: 1440px; */
   height: 1024px;
   background: #283148;
 }
 
 .sabtenam {
-  position: absolute;
+  /* position: absolute; */
   width: 159px;
   height: 38px;
-  left: 640px;
+  margin-left: 50px;
+  /* left: 700px; */
   top: 64px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* Headline/32px */
 
   font-family: 'Vazirmatn';
@@ -27,6 +30,29 @@
 
   color: #EAF0FF;
 
+}
+
+.maindiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 50px; */
+  margin: 50px 60px;
+}
+
+.bishjoLogo {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+/* position: absolute; */
+height: 38px;
+left: 0px;
+right: 0px;
+top: 0px;
 }
 
 /* .bishJo {
@@ -52,13 +78,23 @@ order: 1;
 flex-grow: 0;
 } */
 
+.returnLogo {
+  text-decoration: none;
+}
+
+.logoreturn {
+  margin-right: 8px;
+}
+
 .Return {
-  position: absolute;
+  /* position: absolute; */
   width: 85px;
   height: 37.78px;
   left: 156px;
   top: 64.22px;
-
+display: flex;
+align-items: center;
+justify-content: center;
   /* Title/28px */
 
   font-family: 'Vazirmatn';
@@ -77,12 +113,14 @@ flex-grow: 0;
   position: absolute;
   width: 204px;
   height: 56px;
-  left: 618px;
+  left: 570px;
   top: 182px;
-
-
+background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* Secondary/Light */
-
+border-color: yellow;
   background: #eaf0ff;
   border-radius: 8px;
 }
@@ -260,12 +298,12 @@ flex-grow: 0;
 height: 56px; */
 
   width: 334px;
-  height: 60px;
+  height: 65px;
 
 
   background: #EAF0FF;
   border: 10px solid #313B52;
-  border-radius: 12px;
+  border-radius: 14px;
 
   text-align: right;
 
@@ -292,12 +330,8 @@ height: 56px; */
 
   text-align: center;
 
-  /* Secondary/Light */
 
   color: #EAF0FF;
-
-
-  /* Inside auto layout */
 
   flex: none;
   order: 0;
