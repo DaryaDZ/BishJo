@@ -34,6 +34,18 @@ function Login() {
 
               }}
               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <Button
+                    sx={{
+                      backgroundColor: "#fdbe34",
+                      color: "#323232",
+                    }}
+                    >
+                      دریافت کد
+                    </Button>
+                  </InputAdornment>
+                ),
                 endAdornment: (
                   <InputAdornment position="end">
                     <PersonOutlineIcon />
@@ -44,10 +56,6 @@ function Login() {
                 }
               }}
             />
-          {/* <input
-            className="input"
-            placeholder=" ...نام کاربری یا ایمیل یا تلفن خود را وارد کنید "
-          /> */}
         </div>
         <div>
           <label className="text">رمز عبور</label>
@@ -112,7 +120,7 @@ function Login() {
         </div>
         <div className="hesab">
           حساب ندارید؟
-          <Link to="signup" className="hesablink">
+          <Link to="/sinupslayout/signup" className="hesablink">
             ثبت نام
           </Link>
         </div>
