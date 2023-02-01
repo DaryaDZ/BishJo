@@ -12,99 +12,160 @@ code {
     monospace;
 } */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: #283148;
   font-family: Vazirmatn;
-  
 }
-.linkstyle{
+.linkstyle {
   text-decoration: none;
   text-align: center;
   font-weight: 400;
   font-size: 22px;
   font-family: Vazirmatn;
-  color: #EAF0FF;
+  color: #eaf0ff;
+  
 }
 
-.linkstyle:hover{
-  color:#FDBE34;
-  border-bottom: 1px solid #FDBE34;
+.linkstyle:hover {
+  color: #fdbe34;
+  border-bottom: 1px solid #fdbe34;
+  transition: all 0.5s;
 }
-.blur{
+.blur {
   position: absolute;
-  width:250px;
-  height:60px;
-  top:1210px;
+  width: 250px;
+  height: 60px;
+  top: 1210px;
   backdrop-filter: blur(11px);
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
-  background-color: rgba(0,0,0, 0.4)
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.blurTopRow{
+.blurTopRow {
   position: absolute;
-  width:250px;
-  height:60px;
-  top:990px;
+  width: 250px;
+  height: 60px;
+  top: 990px;
   backdrop-filter: blur(11px);
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
-  background-color: rgba(0,0,0, 0.4)
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.courseImg{
+.courseImg {
   width: 250px;
   height: 180px;
   object-fit: cover;
-  border-radius: 16px
+  border-radius: 16px;
 }
-.softwareIcon{
+.softwareIcon {
   width: 80px;
   height: 80px;
+  position: absolute;
 }
 
-.blurSoftwareName{
+.blurSoftwareName {
   position: absolute;
-  width:220px;
-  height:70px;
-  top:1950px;
-  backdrop-filter: blur(11px);
+  width: 220px;
+  height: 73px;
+  top: 1950px;
+  /* backdrop-filter: blur(11px); */
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   border-radius: 25px;
-  background-color: rgba(0,0,0, 0.4);
-  visibility: hidden;
+  /* background-color: rgba(0,0,0, 0.4); */
 }
-.blurSoftwarename{
+
+.blurSoftwareName:before {
+  content: "";
   position: absolute;
-  width:220px;
-  height:70px;
-  top:1740px;
+  width: 220px;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(11px);
-  display: flex;
-  align-items:center;
-  justify-content:center;
+  bottom: 0;
+  transition: all 0.5s;
   border-radius: 25px;
-  background-color: rgba(0,0,0, 0.4);
-  visibility: hidden;
+}
+
+.blurSoftwareName:hover::before {
+  height: 100%;
+}
+
+.blurSoftwarename {
+  position: relative;
+  width: 220px;
+  height: 72px;
+  top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
   cursor: pointer;
 }
-.blurSoftwarename:hover{
-  visibility: initial;
+.blurSoftwarename:before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(11px);
+  bottom: 0;
+  transition: all 0.5s;
+  border-radius: 25px;
 }
-.linkstylesoftware{
+
+
+
+.linkstylesoftware {
   text-decoration: none;
   text-align: center;
   font-weight: 400;
   font-size: 22px;
   font-family: Vazirmatn;
-  color: #EAF0FF;
+  color: #3C4865;
+  /* transition: all 0.5s; */
+  /* color: #eaf0ff; */
+  position: absolute;
+
+}
+
+.linkstylesoftware:hover{
+    color: #eaf0ff;
+ /* position: relative; */
+ transition: all 0.5s;
+}
+
+.blurSoftwarename:hover::before {
+  height: 100%;
+
+}
+.teacherImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  position: relative;
+  width: 350px;
+}
+.blurTeacher{
+  position: absolute;
+  width: 26%;
+  height: 60px;
+  top:2645px;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
 }

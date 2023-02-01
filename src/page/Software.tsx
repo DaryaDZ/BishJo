@@ -43,6 +43,9 @@ const Software = () => {
     border: "none",
   };
 
+
+
+
   return (
     <Box sx={boxStyle}>
       <Box sx={{marginTop:"50px",marginBottom:"30px"}}>
@@ -71,14 +74,14 @@ const Software = () => {
       </Box>
 
       <Box>
-        <Table sx={{ minWidth: 1170 }}>
+        <Table sx={{ minWidth: 1170,marginBottom:"50px" }}>
           <TableRow>
             <TableCell sx={tableCell}>
               <Box sx={IconCell}>
                 <img src={AdobeAE} alt="" className="softwareIcon" />
                 <div className="blurSoftwarename">
-                <Link to="/" className="linkstyleSoftware">
-                After Effect
+                  <Link to="/" className="linkstylesoftware">
+                  After Effect
                   </Link>
                   </div>
               </Box>
@@ -87,7 +90,7 @@ const Software = () => {
               <Box sx={IconCell}>
                 <img src={AdobeAI} alt="" className="softwareIcon" />
                 <div className="blurSoftwarename">
-                <Link to="/" className="linkstyleSoftware">
+                <Link to="/" className="linkstylesoftware">
                     Illustrator
                   </Link>
                   </div>
@@ -96,8 +99,8 @@ const Software = () => {
             </TableCell>
             <TableCell sx={tableCell}>
               <Box sx={IconCell}>  <img src={AdobePr} alt="" className="softwareIcon" />
-              <div className="blurSoftwarename">
-                <Link to="/" className="linkstyleSoftware">
+              <div className="blurSoftwarename" >
+                <Link to="/" className="linkstylesoftware">
                 Premiere Pro
                   </Link>
                   </div>
@@ -108,51 +111,52 @@ const Software = () => {
               <Box sx={IconCell}>
                 <img src={AdobePs} alt="" className="softwareIcon" />
                 <div className="blurSoftwarename">
-                <Link to="/" className="linkstyleSoftware">
+              
+                <Link to="/" className="linkstylesoftware">
                     Photoshop
                   </Link>
-                  
+               
                   </div>
               </Box>
             </TableCell>
           </TableRow>
 
           <TableRow>
-            <TableCell>
+            <TableCell sx={tableCell}>
               <Box sx={IconCell}><img src={AdobeXD} alt="" className="softwareIcon" />
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstyleSoftware">
+                <Link to="/" className="linkstylesoftware">
                 AdobeXD
                   </Link>
                   
                   </div>
               </Box>
             </TableCell>
-            <TableCell>
+            <TableCell sx={tableCell}>
               <Box sx={IconCell}>
               <img src={Blender} alt="" className="softwareIcon"/>
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstyleSoftware">
+                <Link to="/" className="linkstylesoftware">
                     Blender
                   </Link>
                 </div>
               </Box>
             </TableCell>
-            <TableCell>
+            <TableCell sx={tableCell}>
               <Box sx={IconCell}>
               <img src={Figma} alt="" className="softwareIcon"/>
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstyleSoftware">
+                <Link to="/" className="linkstylesoftware">
                 Figma
                   </Link>
                 </div>
               </Box>
             </TableCell>
-            <TableCell>
+            <TableCell sx={tableCell}>
               <Box sx={IconCell}>
               <img src={UnrealEngine} alt="" className="softwareIcon"/>
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstyleSoftware">
+                <Link to="/" className="linkstylesoftware">
                 Unreal Engine
                   </Link>
                 </div>
