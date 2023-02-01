@@ -37,6 +37,7 @@ const Navbar = () => {
       {/* login & sign Up  Left side*/}
       <div style={ChildDiv}>
         <div style={{ backgroundColor: "#fff", borderRadius: "16px" }}>
+          <Link to='/sinupslayout/signup' >
           <Button
             style={{
               borderRadius: "16px",
@@ -49,6 +50,7 @@ const Navbar = () => {
           >
             ثبت نام{" "}
           </Button>
+          </Link>
           <Button
             style={{
               borderRadius: "16px",

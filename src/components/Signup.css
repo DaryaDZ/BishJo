@@ -1,0 +1,364 @@
+.App {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: #283148;
+}
+
+.sabtenam {
+  position: absolute;
+  width: 159px;
+  height: 38px;
+  left: 640px;
+  top: 64px;
+
+  /* Headline/32px */
+
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  text-align: center;
+
+  /* Secondary/Light */
+
+  color: #EAF0FF;
+
+}
+
+/* .bishJo {
+  position: absolute;
+  /* width: 159px;
+  right: 640px;
+  float: right;
+  top: 64px;
+
+  width: 97px;
+height: 38px;
+
+font-family: 'Walter Turncoat';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+text-align: center;
+color: #EAF0FF;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+} */
+
+.Return {
+  position: absolute;
+  width: 85px;
+  height: 37.78px;
+  left: 156px;
+  top: 64.22px;
+
+  /* Title/28px */
+
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  /* or 34px */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.aHover {
+  position: absolute;
+  width: 204px;
+  height: 56px;
+  left: 618px;
+  top: 182px;
+
+
+  /* Secondary/Light */
+
+  background: #eaf0ff;
+  border-radius: 8px;
+}
+
+.YellowOne {
+  position: absolute;
+  width: 92px;
+  height: 46px;
+  right: 102px;
+  top: calc(50% - 46px / 2);
+
+  /* Accent/Main */
+
+  background: #fdbe34;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Vazirmatn';
+
+  cursor: pointer;
+}
+
+.yellowtext {
+  position: absolute;
+  width: 48px;
+  height: 19px;
+  left: 32px;
+  top: calc(50% - 19px / 2 + 0.5px);
+
+  /* label/16px */
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #323232;
+}
+
+.whiteOne {
+  position: absolute;
+  width: 88px;
+  height: 46px;
+  left: 111px;
+  top: 5px;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+
+  color: #323232;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;  
+  background-color: #eaf0ff;
+
+
+}
+
+/* .whiteOne:hover {
+  background-color: #eaf0ff;
+} */
+
+.whitetext {
+  position: absolute;
+  width: 48px;
+  height: 19px;
+  left: 32px;
+  top: calc(50% - 19px / 2 + 0.5px);
+
+  /* label/16px */
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+
+  color: #323232;
+}
+
+.first {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 26px;
+
+  position: absolute;
+  width: 386px;
+  height: 599px;
+  left: calc(50% - 386px / 2);
+  top: 278px;
+
+
+  background: #313b52;
+  border-radius: 16px;
+}
+
+.firsttext {
+  /* width: 61px; */
+  height: 19px;
+  float: right;
+
+
+  /* label/16px */
+  /* float: right; */
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  text-align: center;
+
+  /* Secondary/Light */
+
+  color: #EAF0FF;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.firstInput {
+  /* width: 334px;
+  height: 56px;
+     */
+  width: 334px;
+  height: 60px;
+  text-align: right;
+
+  background: #EAF0FF;
+  border: 10px solid #313B52;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.icon1 {
+  position: absolute;
+  left: 90.42%;
+  right: 4.79%;
+  top: 35.71%;
+  bottom: 35.71%;
+  /* color: #1C1B1F; */
+  background: #1C1B1F;
+}
+
+.SecondInput {
+  /* width: 334px;
+height: 56px; */
+
+  width: 334px;
+  height: 60px;
+
+
+  background: #EAF0FF;
+  border: 10px solid #313B52;
+  border-radius: 12px;
+
+  text-align: right;
+
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.Secondtext {
+  margin-top: 14px;
+  /* width: 35px; */
+  height: 19px;
+  float: right;
+
+  /* label/16px */
+
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  text-align: center;
+
+  /* Secondary/Light */
+
+  color: #EAF0FF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.signupBtn {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px 20px;
+  gap: 4px;
+
+  width: 334px;
+  height: 39px;
+
+  /* Accent/Main */
+
+  background: #FDBE34;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  text-align: center;
+
+  /* Secondary/Dark */
+
+  color: #323232;
+
+}
+
+ .recapat {
+width: 246px;
+height: 60px;
+margin-top: 20px;
+text-align: center;
+justify-content: center;
+} 
+
+.axyek {
+  width: 246px;
+height: 60px;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+/* left: 20px; */
+margin-left: 45px;
+
+}
+
