@@ -1,5 +1,8 @@
 import { Label } from "@mui/icons-material";
 import React from "react";
+import { Button, TextField, InputAdornment } from "@mui/material";
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import "./MastersSignup.css";
 import download from "../Assets/download.jpg";
 
@@ -11,17 +14,69 @@ function MastersSignup() {
         <div className="inputcontainer">
           {/* <Label className='mastertext' >نام کاربری</Label> */}
           <label className="mastertext">نام کاربری</label>
-          <input
+          <TextField
+               placeholder=" ... نام کاربری خود را وارد کنید "
+              sx={{
+                // width: openInput ? "450px" : "",
+                width: "334px",
+                // height: "60px",
+                textAlign: "right",
+                transition: "width 2s ease-in",
+                // backgroundColor: "#3C4865",
+                borderRadius: "12px",
+                border: "10px solid #313b52",
+                backgroundColor: "#eaf0ff",
+                justifyContent: 'center',
+
+
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <PersonOutlineIcon />
+                  </InputAdornment>
+                ),
+                style:{
+                  height:"50px"
+                }
+              }}
+            />
+          {/* <input
             className="masterinput"
             placeholder=" ...نام کاربری خود را وارد کنید "
-          />
+          /> */}
         </div>
         <div>
           <label className="mastertext">شماره تلفن </label>
-          <input
+          <TextField
+               placeholder=" ...شماره تلفن خود را وارد کنید "
+              sx={{
+                // width: openInput ? "450px" : "",
+                width: "334px",
+                // height: "60px",
+                textAlign: "right",
+                transition: "width 2s ease-in",
+                // backgroundColor: "#3C4865",
+                borderRadius: "12px",
+                border: "10px solid #313b52",
+                backgroundColor: "#eaf0ff"
+
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <PhoneIphoneIcon />
+                  </InputAdornment>
+                ),
+                style:{
+                  height:"50px"
+                }
+              }}
+            />
+          {/* <input
             className="masterinput"
             placeholder=" ...شماره تلفن خود را وارد کنید "
-          />
+          /> */}
         </div>
         <div>
           

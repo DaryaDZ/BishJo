@@ -1,7 +1,10 @@
 import React from "react";
 import "./Signup.css";
-
+import { Button, TextField, InputAdornment } from "@mui/material";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import EdgesensorHighIcon from '@mui/icons-material/EdgesensorHigh';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import { Link } from "react-router-dom";
 import download from "../Assets/download.jpg";
 
@@ -14,53 +17,153 @@ function Signup() {
             <label className="firsttext">
               {" "}
               نام کاربری
-              {/* <PersonOutlineIcon /> */}
             </label>
-            {/* <div className='firsttext'>
-              </div> */}
-            <input
-              className="SecondInput"
-              type="text"
-              placeholder="...نام کاربری خود را وارد کنید"
+            <TextField
+               placeholder=" ... نام کاربری خود را وارد کنید "
+               type="text"
+              sx={{
+                // width: openInput ? "450px" : "",
+                width: "334px",
+                // height: "60px",
+                textAlign: "right",
+                transition: "width 2s ease-in",
+                // backgroundColor: "#3C4865",
+                borderRadius: "12px",
+                border: "10px solid #313b52",
+                backgroundColor: "#eaf0ff",
+                justifyContent: 'center',
+
+
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <PersonOutlineIcon />
+                  </InputAdornment>
+                ),
+                style:{
+                  height:"50px"
+                }
+              }}
             />
-            {/* <PersonOutlineIcon  className='icon1'/> */}
+            
+            {/* <input
+              className="SecondInput"
+              placeholder="...نام کاربری خود را وارد کنید"
+            /> */}
+
           </div>
           <div>
             <div className="Secondtext">
               ایمیل
               {/* <PersonOutlineIcon /> */}
             </div>
-            <input
-              className="SecondInput"
-              type="email"
-              placeholder=" ...ایمیل خود را وارد کنید"
+            <TextField
+               placeholder=" ... ایمیل خود را وارد کنید "
+               type="email"
+              sx={{
+                // width: openInput ? "450px" : "",
+                width: "334px",
+                // height: "60px",
+                textAlign: "right",
+                transition: "width 2s ease-in",
+                // backgroundColor: "#3C4865",
+                borderRadius: "12px",
+                border: "10px solid #313b52",
+                backgroundColor: "#eaf0ff",
+                justifyContent: 'center',
+
+
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <AlternateEmailIcon />
+                  </InputAdornment>
+                ),
+                style:{
+                  height:"50px"
+                }
+              }}
             />
+            
           </div>
           <div>
             <div className="Secondtext">
               شماره تلفن
-              {/* <PersonOutlineIcon /> */}
             </div>
-            <input
-              className="SecondInput"
-              type="number"
-              placeholder="...شماره تلفن خود را وارد کنید"
+            <TextField
+               placeholder=" ... شماره تلفن خود را وارد کنید "
+               type="number"
+              sx={{
+                // width: openInput ? "450px" : "",
+                width: "334px",
+                // height: "60px",
+                textAlign: "right",
+                transition: "width 2s ease-in",
+                // backgroundColor: "#3C4865",
+                borderRadius: "12px",
+                border: "10px solid #313b52",
+                backgroundColor: "#eaf0ff",
+                justifyContent: 'center',
+
+
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <EdgesensorHighIcon />
+                  </InputAdornment>
+                ),
+                style:{
+                  height:"50px"
+                }
+              }}
             />
+            {/* <input
+              className="SecondInput"
+              placeholder="...شماره تلفن خود را وارد کنید"
+            /> */}
           </div>
           <div>
             <div className="Secondtext">
               رمز عبور
-              {/* <PersonOutlineIcon /> */}
             </div>
-            <input
+            <TextField
+               placeholder=" ... نام کاربری خود را وارد کنید "
+               type="password"
+              sx={{
+                // width: openInput ? "450px" : "",
+                width: "334px",
+                // height: "60px",
+                textAlign: "right",
+                transition: "width 2s ease-in",
+                // backgroundColor: "#3C4865",
+                borderRadius: "12px",
+                border: "10px solid #313b52",
+                backgroundColor: "#eaf0ff",
+                justifyContent: 'center',
+
+
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <VpnKeyIcon />
+                  </InputAdornment>
+                ),
+                style:{
+                  height:"50px"
+                }
+              }}
+            />
+            {/* <input
               className="SecondInput"
               placeholder="...رمز عبور خود را وارد کنید"
-              type="password"
-            />
+            /> */}
           </div>
 
           <div className="recapat">
-            {/* img: "../Image/second.webp", */}
 
             <img className="axyek" src={download} />
           </div>
