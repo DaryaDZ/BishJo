@@ -51,6 +51,7 @@ const Navbar = () => {
             ثبت نام{" "}
           </Button>
           </Link>
+          <Link to='/loginslayout/login' >
           <Button
             style={{
               borderRadius: "16px",
@@ -60,9 +61,10 @@ const Navbar = () => {
               width: "80px",
               height: "43px",
             }}
-          >
+            >
             ورود
           </Button>
+            </Link>
         </div>
         <div
           style={{

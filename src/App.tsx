@@ -6,6 +6,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import MastersSignup from './components/MastersSignup';
 import Signuplayout from './components/SignupLayout';
+import LoginsLayout from './components/LoginsLayout';
+import MasterLogin from './components/MasterLogin';
 
 function App() {
   return (
@@ -17,9 +19,14 @@ function App() {
         </Route>
         <Route path='/sinupslayout' element={<Signuplayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
-          <Route path='login' element={<Login />} />
           <Route path='signup' element={<Signup />} />
           </Route>
+          <Route path='/loginslayout' element={<LoginsLayout />} >
+          <Route path='masterslogin' element={<MasterLogin />} />
+          <Route path='login' element={<Login />} />
+            </Route>            
+
+
 
       </Routes>
    </Router>

@@ -4,7 +4,7 @@ import Checkbox from "@mui/material/Checkbox";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
 
-function Login() {
+function MasterLogin() {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
   return (
@@ -62,4 +62,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default MasterLogin;

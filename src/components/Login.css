@@ -1,0 +1,174 @@
+.loginsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 26px;
+
+  position: absolute;
+  width: 386px;
+  height: 457px;
+  left: calc(50% - 386px / 2);
+  top: 278px;
+
+  background: #313b52;
+  border-radius: 16px;
+}
+
+.text {
+  margin-top: 20px;
+  height: 19px;
+  margin-right: 6px;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  /* text-align: center; */
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  /* display: flex; */
+
+  color: #eaf0ff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  float: right;
+}
+
+.input {
+  width: 334px;
+  height: 64px;
+  text-align: right;
+
+  background: #eaf0ff;
+  border: 10px solid #313b52;
+  border-radius: 12px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.remember {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.rememberme {
+  float: right;
+  justify-content: space-between;
+  /* justify-content: right; */
+  display: flex;
+  margin-top: 25px;
+  margin-left: 40px;
+
+}
+
+.forgotPass {
+  float: left;
+  justify-content: left;
+  margin-top: 35px;
+  margin-right: 10px;
+
+  /* width: 114px; */
+height: 17px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+/* identical to box height, or 17px */
+
+text-align: right;
+
+/* Accent/Main */
+
+color: #FDBE34;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+cursor: pointer;
+}
+
+.rememberText {
+  /* width: 85px; */
+height: 17px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+/* identical to box height, or 17px */
+
+text-align: right;
+
+/* Accent/Main */
+
+color: #FDBE34;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.signupBtn {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px 20px;
+  gap: 4px;
+
+  width: 334px;
+  height: 39px;
+
+  /* Accent/Main */
+
+  background: #fdbe34;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  text-align: center;
+
+  /* Secondary/Dark */
+
+  cursor: pointer;
+  color: #323232;
+}
+
+.hesab {
+  color: #eaf0ff;
+  margin-top: 8px;
+}
+
+.hesablink {
+  color: #FDBE34;
+  margin-right: 6px;
+}
+
