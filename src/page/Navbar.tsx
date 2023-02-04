@@ -76,7 +76,7 @@ const Navbar = () => {
         >
           <img src={Logo1} alt="" style={{ marginRight: "12px" }} />
           <Link
-            to="/"
+            to="/apply"
             style={{
               textDecoration: "none",
               color: "#EAF0FF",

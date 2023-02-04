@@ -1,0 +1,276 @@
+.main {
+  display: flex;
+}
+
+.label {
+  position: absolute;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
+  width: 386px;
+  height: 38px;
+  left: 527px;
+  top: 176px;
+
+  /* Headline/32px */
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.contAiner {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* margin-top: 100px; */
+}
+
+.firstdiv {
+  /* margin-left: 150px; */
+  flex-direction: column;
+  margin-left: 80px;
+  /* margin-left: 300px; */
+  /* margin: 100px;
+  margin-left: 150px; */
+}
+
+.bishse {
+  /* position: absolute; */
+  left: 11.25%;
+  right: 11.25%;
+  top: 21.77%;
+  bottom: 22.4%;
+  /* margin: 150px; */
+  /* margin-left: 280px; */
+}
+
+.thethirdtext {
+  margin-top: 20px;
+  /* width: 387px;
+  height: 29px; */
+
+  /* Title/24px */
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.firstcontent {
+  margin-top: 20px;
+  width: 387px;
+  height: 42px;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.containerdo {
+  color: white;
+  margin-left: 30px;
+  /* margin: 100px; */
+}
+
+.bishdo {
+  /* position: absolute; */
+  left: 20.83%;
+  right: 20.83%;
+  top: 12.5%;
+  bottom: 10.62%;
+  /* margin: 150px; */
+}
+
+.thesecondtext {
+  /* width: 387px;
+  height: 29px; */
+
+  /* Title/24px */
+  margin-top: 16px;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.containeryek {
+  /* margin: 30px; */
+  color: white;
+  margin-left: 30px;
+}
+
+.bishyek {
+  /* position: absolute; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  /* margin: 150px; */
+}
+
+.thefirsttext {
+  /* width: 387px;
+  height: 29px; */
+
+  /* Title/24px */
+
+  margin-top: 16px;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.secondcontent {
+  width: 387px;
+height: 42px;
+
+margin-top: 10px;
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.thirdcontent {
+  width: 387px;
+height: 42px;
+
+margin-top: 10px;
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.textdo {
+  position: absolute;
+width: 385px;
+height: 29px;
+left: 528px;
+top: 669px;
+
+/* Title/24px */
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.textse {
+  position: absolute;
+width: 967px;
+height: 24px;
+left: 236px;
+top: 731px;
+
+/* Body/16px */
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
