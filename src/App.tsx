@@ -9,18 +9,17 @@ import SignupLayout from './components/SignupLayout';
 import LoginsLayout from './components/LoginsLayout';
 import MasterLogin from './components/MasterLogin';
 import Apply from './page/Apply';
-<<<<<<< HEAD
 import Questions from './components/Questions';
 import Support from './components/Support';
 import Photoshop from './components/Photoshop';
-import PremierePro from './components/PremierePro';
-import Illustarator from './components/Illustarator';
-import AfterEffect from './components/AfterEffect';
-import AdobeXD from './components/AdobeXD';
-import Blender from './components/Blender'
-import Figma from './components/Figma';
-import   UnrealEngine from './components/UnrealEngine'
-import Sketch from './page/Sketch';
+// import PremierePro from './components/PremierePro';
+// import Illustarator from './components/Illustarator';
+// import AfterEffect from './components/AfterEffect';
+// import AdobeXD from './components/AdobeXD';
+// import Blender from './components/Blender'
+// import Figma from './components/Figma';
+// import UnrealEngine from './components/UnrealEngine'
+// import Sketch from './page/Sketch';
 import AboutBishjo from './page/AboutBishjo';
 
 function App() {
