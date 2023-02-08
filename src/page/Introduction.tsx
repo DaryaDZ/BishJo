@@ -146,7 +146,10 @@ const Introduction = () => {
             fontFamily: "Vazirmatn",
             width: "150px",
             height: "47px",
-            color: "#323232",
+              color: "#323232",
+              '&:hover': {
+                backgroundColor: "#FDBE34",
+            }
           }}
         >
           خرید اشتراک

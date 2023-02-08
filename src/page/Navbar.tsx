@@ -19,6 +19,11 @@ const Navbar = () => {
     fontWight: "400",
     fontSize: "16px",
     marginRight: "8px",
+    backgroundColor: "#283148",
+    '&:hover': {
+      color: "#FDBE34",
+   
+    }
   };
 
   const [openInput, setOpenInput] = useState<boolean>(false);
@@ -53,7 +58,7 @@ const Navbar = () => {
           </Link>
           <Link to='/loginslayout/login' >
           <Button
-            style={{
+            sx={{
               borderRadius: "16px",
               fontFamily: "Vazirmatn",
               color: "#323232",
@@ -66,24 +71,12 @@ const Navbar = () => {
           </Button>
             </Link>
         </div>
-        <div
-          style={{
-            marginLeft: "30px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img src={Logo1} alt="" style={{ marginRight: "12px" }} />
+        <div className="divNavbar">
+         
+          <img src={Logo1} alt=""  className="TadresIcon" />
           <Link
             to="/apply"
-            style={{
-              textDecoration: "none",
-              color: "#EAF0FF",
-              fontWeight: "400",
-              fontSize: "16px",
-            }}
-          >
+            className="LinkNavbar">
             درخواست تدریس
           </Link>
         </div>
@@ -132,9 +125,9 @@ const Navbar = () => {
 
         {/* Menu */}
         <div style={ChildDiv}>
-          <Button style={MenuBtn}> کتابخانه</Button>
-          <Button style={MenuBtn}>وبلاگ</Button>
-          <Button style={MenuBtn}>دوره ها </Button>
+          <Button sx={MenuBtn}> کتابخانه</Button>
+          <Button sx={MenuBtn}>وبلاگ</Button>
+          <Button sx={MenuBtn}>دوره ها </Button>
         </div>
         {/* Icon */}
         <div style={ChildDiv}>

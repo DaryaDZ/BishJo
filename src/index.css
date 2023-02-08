@@ -224,3 +224,22 @@ ul li{
 ul li:hover{
   color:#FDBE34
 }
+.divNavbar{
+  margin-left:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.LinkNavbar{
+  text-decoration:none;
+  color:#EAF0FF;
+  font-weight:400;
+  font-size: 16px;
+
+}
+.TadresIcon{
+  margin-right:12px;
+}
+.LinkNavbar:hover{
+  color:#FDBE34
+}
