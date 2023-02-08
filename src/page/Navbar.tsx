@@ -139,7 +139,9 @@ const Navbar = () => {
         {/* Icon */}
         <div style={ChildDiv}>
           <img src={Name} alt="" style={{ marginRight: "8px" }} />
+          <Link to='/' >
           <img src={icon} alt="" />
+          </Link>
         </div>
       </div>
     </div>
