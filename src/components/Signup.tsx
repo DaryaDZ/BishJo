@@ -1,44 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Signup.css";
 import { Button, TextField, InputAdornment } from "@mui/material";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
-import EdgesensorHighIcon from '@mui/icons-material/EdgesensorHigh';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import VpnKeyIcon from '@mui/icons-material/VpnKey';
-import { Link } from "react-router-dom";
+import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+// import { Link } from "react-router-dom";
 import download from "../Assets/download.jpg";
-import { Construction } from "@mui/icons-material";
+// import { Construction } from "@mui/icons-material";
+import { signupUser } from "../features/Bishjo/UserSlice";
+import { useDispatch } from "react-redux";
 
 function Signup() {
-  
-   
+  const dispatch = useDispatch();
+  const [username, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className="App">
       <div className="first">
         <div>
           <div>
-            <label className="firsttext">
-              {" "}
-              نام کاربری
-            </label>
+            <label className="firsttext"> نام کاربری</label>
             <TextField
-               placeholder="  نام کاربری خود را وارد کنید... "
-               type="text"
+              placeholder="  نام کاربری خود را وارد کنید... "
+              type="text"
               sx={{
-                // width: openInput ? "450px" : "",
                 width: "334px",
-                // height: "60px",
                 textAlign: "right",
                 transition: "width 2s ease-in",
-                // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
-                justifyContent: 'center',
-                direction: 'rtl',
-
-
-
+                justifyContent: "center",
+                direction: "rtl",
               }}
               InputProps={{
                 startAdornment: (
@@ -46,40 +43,31 @@ function Signup() {
                     <PersonOutlineIcon />
                   </InputAdornment>
                 ),
-                style:{
-                  height:"50px"
-                }
+                style: {
+                  height: "50px",
+                },
               }}
+              value={username}
+              onChange={(e) => setUserName(e.target.value)}
             />
-            
-            {/* <input
-              className="SecondInput"
-              placeholder="...نام کاربری خود را وارد کنید"
-            /> */}
-
           </div>
           <div>
             <div className="Secondtext">
               ایمیل
-              {/* <PersonOutlineIcon /> */}
+            
             </div>
             <TextField
-               placeholder=" ایمیل خود را وارد کنید...  "
-               type="email"
+              placeholder=" ایمیل خود را وارد کنید...  "
+              type="email"
               sx={{
-                // width: openInput ? "450px" : "",
                 width: "334px",
-                // height: "60px",
                 textAlign: "right",
                 transition: "width 2s ease-in",
-                // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
-                justifyContent: 'center',
-                direction: 'rtl',
-
-
+                justifyContent: "center",
+                direction: "rtl",
               }}
               InputProps={{
                 startAdornment: (
@@ -87,33 +75,27 @@ function Signup() {
                     <AlternateEmailIcon />
                   </InputAdornment>
                 ),
-                style:{
-                  height:"50px"
-                }
+                style: {
+                  height: "50px",
+                },
               }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            
           </div>
           <div>
-            <div className="Secondtext">
-              شماره تلفن
-            </div>
+            <div className="Secondtext">شماره تلفن</div>
             <TextField
-               placeholder="  شماره تلفن خود را وارد کنید... "
+              placeholder="  شماره تلفن خود را وارد کنید... "
               sx={{
-                // width: openInput ? "450px" : "",
                 width: "334px",
-                // height: "60px",
                 textAlign: "right",
                 transition: "width 2s ease-in",
-                // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
-                justifyContent: 'center',
-                direction: 'rtl',
-
-
+                justifyContent: "center",
+                direction: "rtl",
               }}
               InputProps={{
                 startAdornment: (
@@ -121,38 +103,29 @@ function Signup() {
                     <EdgesensorHighIcon />
                   </InputAdornment>
                 ),
-                style:{
-                  height:"50px"
-                }
+                style: {
+                  height: "50px",
+                },
               }}
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
             />
-            {/* <input
-              className="SecondInput"
-              placeholder="...شماره تلفن خود را وارد کنید"
-            /> */}
+    
           </div>
           <div>
-            <div className="Secondtext">
-              رمز عبور
-            </div>
+            <div className="Secondtext">رمز عبور</div>
             <TextField
-               placeholder=" رمز عبور خود را وارد کنید... "
-               type="password"
+              placeholder=" رمز عبور خود را وارد کنید... "
+              type="password"
               sx={{
-                // width: openInput ? "450px" : "",
                 width: "334px",
-                // height: "60px",
                 textAlign: "right",
                 transition: "width 2s ease-in",
-                // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
-                justifyContent: 'center',
-                direction: 'rtl',
-
-
-
+                justifyContent: "center",
+                direction: "rtl",
               }}
               InputProps={{
                 startAdornment: (
@@ -160,23 +133,27 @@ function Signup() {
                     <VpnKeyIcon />
                   </InputAdornment>
                 ),
-                style:{
-                  height:"50px"
-                }
+                style: {
+                  height: "50px",
+                },
               }}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
-            {/* <input
-              className="SecondInput"
-              placeholder="...رمز عبور خود را وارد کنید"
-            /> */}
           </div>
 
           <div className="recapat">
-
-            <img className="axyek" src={download} />
+            <img src={download} alt="" className="axyek" />
           </div>
           <div>
-            <button className="signupBtn">ثبت نام</button>
+            <button
+              className="signupBtn"
+              onClick={() =>
+                dispatch(signupUser({username,email,phone,password}))
+              }
+            >
+              ثبت نام
+            </button>
           </div>
         </div>
       </div>
