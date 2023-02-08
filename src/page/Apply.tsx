@@ -45,6 +45,8 @@ function Apply() {
 
         </div>
       </div>
+      <div className='display'>
+
 
       <div className='textdo'>
       پلن های تدریس در دانشجویار
@@ -52,6 +54,52 @@ function Apply() {
       <div className='textse'>
        :در بیشجو ، نحوه همکاری با مدرسین به 3 شکل میباشد. در این پلن ها ، هزینه ها و درآمد ها به شکل های مختلفی محاسبه میشود که به شرح ذیل میباشد
       </div>
+      <div className='tadris'>
+      <div className="tadrisyek">
+        <div className="number1">
+          <div className="firstnumber">1</div>
+        </div>
+        <div className="firsttexT">
+          .ثابت: در روش ثابت به ازای هر ساعت از آموزش مبلغی تحت عنوان حق التدریس
+          به مدرس پرداخت می گردد. این مبلغ با توجه به هر دوره و با توافق طرفین
+          تعیین می گردد{" "}
+        </div>
+      </div>
+      <div className="tadrisdo">
+        <div className="number2">
+          <div className="secondnumber">
+            <div className="secondNumber">2</div>
+          </div>
+          <div className="thesecondtxt">
+            درصدی: در همکاری به صورت درصدی نحوه در آمد مدرس به صورت زیر می باشد
+          </div>
+        </div>
+        <div>
+          <div className="textezard1">
+            <div className="Percent1">۴۰% مدرس</div>
+          </div>
+          <div className="textezard2">
+            <div className="Percent2">۳۰% دانشجویار</div>
+          </div>
+          <div className="textezard3">
+            <div className="Percent3">۳۰% تبلیغات</div>
+          </div>
+        </div>
+        <div className="tadris3">
+          <div className="number3">
+            <div className="thirdnumber">
+              <div className="thirdNumber">3</div>
+              <div className="thethirdtxt">
+                ترکیبی: در این روش مدرس به ازای هر ساعت آموزش مبلغی معادل 70
+                درصد از مبلغ ثابت با توجه به امتیازات و 15 درصد از فروش خالص
+دوره را دریافت می کند              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
       
     </div>
   )

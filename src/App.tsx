@@ -9,6 +9,7 @@ import SignupLayout from './components/SignupLayout';
 import LoginsLayout from './components/LoginsLayout';
 import MasterLogin from './components/MasterLogin';
 import Apply from './page/Apply';
+<<<<<<< HEAD
 import Questions from './components/Questions';
 import Support from './components/Support';
 import Photoshop from './components/Photoshop';
@@ -19,9 +20,8 @@ import AdobeXD from './components/AdobeXD';
 import Blender from './components/Blender'
 import Figma from './components/Figma';
 import   UnrealEngine from './components/UnrealEngine'
-
-
-
+import Sketch from './page/Sketch';
+import AboutBishjo from './page/AboutBishjo';
 
 function App() {
   return (
@@ -41,6 +41,8 @@ function App() {
           <Route path="blender" element={<Blender />} />
           <Route path="figma" element={<Figma />} />
           <Route path="unrealEngine" element={<UnrealEngine />} />
+          <Route path='sketch' element={<Sketch />} />
+          <Route path='aboutus' element={<AboutBishjo />} />
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            

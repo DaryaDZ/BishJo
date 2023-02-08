@@ -22,7 +22,11 @@ const Footer = () => {
     width: "100%",
     backgroundColor: "#EAF0FF",
     height: "280px",
+<<<<<<< HEAD
     marginTop: "190px",
+=======
+    marginTop: "580px",
+>>>>>>> da004d5c77cad66e9dca5c72f2251c7615dd6eaa
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
