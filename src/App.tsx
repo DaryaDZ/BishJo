@@ -34,14 +34,6 @@ function App() {
           <Route path="support" element={ <Support />} />
           <Route path="questions" element={<Questions />} />
           <Route path="photoshop" element={<Photoshop />} />
-          <Route path="premiere" element={<PremierePro />} />
-          <Route path="illustartor" element={<Illustarator />} />
-          <Route path="aftereffect" element={<AfterEffect />} />
-          <Route path="adobexd" element={<AdobeXD />} />
-          <Route path="blender" element={<Blender />} />
-          <Route path="figma" element={<Figma />} />
-          <Route path="unrealEngine" element={<UnrealEngine />} />
-          <Route path='sketch' element={<Sketch />} />
           <Route path='aboutus' element={<AboutBishjo />} />
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
