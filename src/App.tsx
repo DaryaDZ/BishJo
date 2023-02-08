@@ -9,7 +9,17 @@ import SignupLayout from './components/SignupLayout';
 import LoginsLayout from './components/LoginsLayout';
 import MasterLogin from './components/MasterLogin';
 import Apply from './page/Apply';
-import Sketch from './page/Sketch';
+import Questions from './components/Questions';
+import Support from './components/Support';
+import Photoshop from './components/Photoshop';
+// import PremierePro from './components/PremierePro';
+// import Illustarator from './components/Illustarator';
+// import AfterEffect from './components/AfterEffect';
+// import AdobeXD from './components/AdobeXD';
+// import Blender from './components/Blender'
+// import Figma from './components/Figma';
+// import UnrealEngine from './components/UnrealEngine'
+// import Sketch from './page/Sketch';
 import AboutBishjo from './page/AboutBishjo';
 
 function App() {
@@ -20,9 +30,10 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='apply' element={<Apply />} />
-          <Route path='sketch' element={<Sketch />} />
+          <Route path="support" element={ <Support />} />
+          <Route path="questions" element={<Questions />} />
+          <Route path="photoshop" element={<Photoshop />} />
           <Route path='aboutus' element={<AboutBishjo />} />
-
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
