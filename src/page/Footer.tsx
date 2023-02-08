@@ -8,7 +8,7 @@ const Footer = () => {
     width: "100%",
     backgroundColor: "#EAF0FF",
     height: "280px",
-    marginTop: "80px",
+    marginTop: "580px",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",

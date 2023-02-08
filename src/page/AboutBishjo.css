@@ -1,0 +1,147 @@
+.myMain {
+  width: 1000px;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.titleone {
+  justify-content: center;
+  align-items: center;
+  margin-left: 600px;
+  width: 240px;
+  height: 40px;
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+
+  color: #eaf0ff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.QuestionsContainer {
+  /* width: 1000px; */
+  width: 700px;
+  margin-right: 700px;
+  margin-top: 40px;
+  background-color: red;
+}
+
+.pic1 {
+  margin-left: 200px;
+  
+width: 1000px;
+height: 0px;
+
+/* Secondary/Light */
+
+border: 1px dashed #EAF0FF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.ContaineR1 {
+  display: flex;
+}
+
+.help {
+  position: absolute;
+/* left: 91.73%;
+right: 0.75%;
+top: 15.52%;
+bottom: 15.52%; */
+/* margin-top: 200px; */
+margin-left: 1180px;
+margin-top: 10px;
+
+}
+
+.TXT1 {
+  width: 1000px;
+height: 29px;
+/* margin-top: 5px;
+
+/* Body/24px */
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+text-align: right;
+
+/* Secondary/Light */
+
+color: #EAF0FF;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.BTTTN {
+/* float: left; */
+margin-left: 100px;
+}
+
+.bTn {
+  /* float: left; */
+  /* margin-right: 1000px; */
+  /* display: flex; */
+/* flex-direction: row;
+justify-content: center;
+align-items: baseline; */
+padding: 0px;
+
+width: 48px;
+height: 24px;
+
+/* Secondary/Light */
+
+background: #EAF0FF;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+/* flex: none; */
+order: 0;
+flex-grow: 0;
+cursor: pointer;
+}
+/* 
+.answer {
+  width: 29px;
+height: 17px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+
+text-align: center;
+
+
+color: #323232;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+} */

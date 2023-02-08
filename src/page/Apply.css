@@ -13,14 +13,12 @@
   left: 527px;
   top: 176px;
 
-  /* Headline/32px */
 
   font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 120%;
-  /* or 38px */
 
   text-align: center;
 
@@ -39,20 +37,20 @@
 .firstdiv {
   /* margin-left: 150px; */
   flex-direction: column;
-  margin-left: 80px;
+  margin-left: 100px;
   /* margin-left: 300px; */
   /* margin: 100px;
   margin-left: 150px; */
 }
 
 .bishse {
-  /* position: absolute; */
-  left: 11.25%;
+  height: 60px;
+  width: 70px;
+  /* left: 11.25%;
   right: 11.25%;
   top: 21.77%;
-  bottom: 22.4%;
-  /* margin: 150px; */
-  /* margin-left: 280px; */
+  bottom: 22.4%; */
+
 }
 
 .thethirdtext {
@@ -64,16 +62,15 @@
 
   font-family: "Vazirmatn";
   font-style: normal;
+  /* font-weight: 400;
+  font-size: 24px; */
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
-  /* identical to box height, or 29px */
 
   text-align: center;
 
   color: #ffffff;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 1;
@@ -111,11 +108,12 @@
 
 .bishdo {
   /* position: absolute; */
-  left: 20.83%;
+  /* left: 20.83%;
   right: 20.83%;
   top: 12.5%;
-  bottom: 10.62%;
-  /* margin: 150px; */
+  bottom: 10.62%; */
+  height: 75px;
+  width: 60px;
 }
 
 .thesecondtext {
@@ -150,12 +148,12 @@
 }
 
 .bishyek {
-  /* position: absolute; */
-  left: 0%;
+  /* left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 0%;
-  /* margin: 150px; */
+  bottom: 0%; */
+  height: 75px;
+  width: 55px;
 }
 
 .thefirsttext {
@@ -186,81 +184,135 @@
 
 .secondcontent {
   width: 387px;
-height: 42px;
+  height: 42px;
 
-margin-top: 10px;
-font-family: 'Vazirmatn';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-/* or 21px */
+  margin-top: 10px;
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
 
-text-align: center;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-flex-grow: 0;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .thirdcontent {
   width: 387px;
-height: 42px;
+  height: 42px;
 
-margin-top: 10px;
-font-family: 'Vazirmatn';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-/* or 21px */
+  margin-top: 10px;
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
 
-text-align: center;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-flex-grow: 0;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
+
+/* .display {
+  position: relative;
+} */
 
 .textdo {
   position: absolute;
-width: 385px;
-height: 29px;
-left: 528px;
-top: 669px;
+  width: 385px;
+  height: 29px;
+  left: 528px;
+  top: 640px;
 
-/* Title/24px */
+  /* top: 669px; */
 
-font-family: 'Vazirmatn';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 120%;
-/* identical to box height, or 29px */
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
 
-text-align: center;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .textse {
   position: absolute;
-width: 967px;
-height: 24px;
-left: 236px;
-top: 731px;
+  width: 967px;
+  height: 24px;
+  left: 236px;
+  top: 672px;
 
-/* Body/16px */
+  /* top: 731px; */
+
+  /* Body/16px */
+
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+
+.tadrisyek {
+  position: absolute;
+width: 1000px;
+height: 64px;
+/* left: 120px; */
+left: 220px;
+
+top: 750px;
+/* top: 779px; */
+
+/* Primary/Lighter version */
+
+background: #3C4865;
+border-radius: 12px;
+display: flex;
+}
+
+.number1 {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 940px;
+  top: 8px;
+  
+  /* Accent/Main */
+  
+  background: #FDBE34;
+  border-radius: 8px;
+}
+
+.firstnumber {
+  position: absolute;
+width: 5px;
+height: 24px;
+left: 21px;
+top: 12px;
 
 font-family: 'Vazirmatn';
 font-style: normal;
@@ -271,6 +323,297 @@ line-height: 150%;
 
 text-align: center;
 
-color: #FFFFFF;
+color: #000000;
+}
 
+.firsttexT {
+  position: absolute;
+width: 920px;
+height: 28px;
+/* left: 205px; */
+/* left: 140px; */
+top: 20px;
+margin-left: 3px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+/* or 14px */
+
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #FFFFFF;
+}
+
+.number2 {
+  position: absolute;
+width: 590px;
+height: 64px;
+left: 630px;
+/* left: 530px; */
+top: 830px;
+/* top: 867px; */
+
+/* Primary/Lighter version */
+
+background: #3C4865;
+border-radius: 12px;
+}
+
+.secondnumber {
+  position: absolute;
+width: 48px;
+height: 48px;
+left: 530px;
+top: 7px;
+
+/* Accent/Main */
+
+background: #FDBE34;
+border-radius: 8px;
+}
+
+.secondNumber {
+  position: absolute;
+width: 9px;
+height: 24px;
+left: 19px;
+top: 12px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+color: #000000;
+}
+
+.thesecondtxt {
+  position: absolute;
+  width: 464px;
+  height: 28px;
+  left: 49px;
+  top: 27px;
+  
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* or 14px */
+  
+  text-align: right;
+  
+  color: #FFFFFF; 
+}
+
+.tadrisdo {
+  display: flex;
+}
+
+.textezard1 {
+  position: absolute;
+/* width: 183px;
+height: 64px; */
+width: 123px;
+height: 64px;
+/* left: 527px; */
+/* top: 867px; */
+/* left: 400px; */
+/* left: 395px; */
+left: 495px;
+/* left: 595px; */
+
+top: 830px;
+
+/* top: 959px; */
+
+
+
+
+background: #FDBE34;
+border-radius: 12px;
+}
+
+.textezard2 {
+  position: absolute;
+/* width: 184px; */
+width: 123px;
+height: 64px;
+/* left: 323px; */
+/* top: 867px; */
+/* left: 257px; */
+left: 357px;
+top: 830px;
+
+/* top: 959px; */
+
+
+background: #FDBE34;
+border-radius: 12px;
+
+}
+
+.textezard3 {
+  position: absolute;
+/* width: 183px; */
+width: 123px;
+
+height: 64px;
+left: 220px;
+/* left: 120px; */
+top: 830px;
+
+/* top: 959px; */
+
+/* top: 867px; */
+
+/* Accent/Main */
+
+background: #FDBE34;
+border-radius: 12px;
+}
+
+.Percent1 {
+  position: absolute;
+width: 41px;
+height: 48px;
+left: 42px;
+top: 8px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Secondary/Dark */
+
+color: #323232;
+}
+
+.Percent2 {
+  position: absolute;
+width: 63px;
+height: 48px;
+left: 31px;
+top: 8px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Secondary/Dark */
+
+color: #323232;
+}
+
+.Percent3 {
+  position: absolute;
+width: 49px;
+height: 48px;
+left: 35px;
+top: 8px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Secondary/Dark */
+
+color: #323232;
+}
+
+.tadris3{
+  position: absolute;
+/* width: 1200px; */
+width: 1000px;
+height: 64px;
+left: 220px;
+/* left: 120px; */
+top: 910px;
+
+/* top: 1039px; */
+
+/* Primary/Lighter version */
+
+background: #3C4865;
+border-radius: 12px;
+}
+
+.number3 {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 940px;
+  top: 8px;
+  
+  /* Accent/Main */
+  
+  background: #FDBE34;
+  border-radius: 8px;
+}
+ 
+.thirdnumber{
+  position: absolute;
+width: 9px;
+height: 24px;
+left: 19px;
+top: 12px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+color: #000000;
+}
+
+.thethirdtxt {
+  position: absolute;
+  width: 864px;
+  height: 28px;
+  right: 42px;
+  /* left: 49px; */
+  top: 8px;
+  
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;  
+  text-align: right;
+  
+  color: #FFFFFF; 
+}
+
+.tadris {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

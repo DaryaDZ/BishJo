@@ -9,6 +9,8 @@ import SignupLayout from './components/SignupLayout';
 import LoginsLayout from './components/LoginsLayout';
 import MasterLogin from './components/MasterLogin';
 import Apply from './page/Apply';
+import Sketch from './page/Sketch';
+import AboutBishjo from './page/AboutBishjo';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='apply' element={<Apply />} />
+          <Route path='sketch' element={<Sketch />} />
+          <Route path='aboutus' element={<AboutBishjo />} />
 
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
