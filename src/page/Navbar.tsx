@@ -21,8 +21,8 @@ const Navbar = () => {
     marginRight: "8px",
   };
 
-  const [openInput, setOpenInput] = useState(false);
-  const [showBtn, setShowBtn] = useState(true);
+  const [openInput, setOpenInput] = useState<boolean>(false);
+  const [showBtn, setShowBtn] = useState<boolean>(true);
 
   return (
     <div

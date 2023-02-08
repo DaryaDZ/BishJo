@@ -205,3 +205,22 @@ left: calc(50% - 389.59px/2 + 194.5px);
   margin-top: 20px;
   height: 85px;
 }
+.footerImg{
+  margin-right: 60px;
+}
+ul{
+  direction: rtl; 
+}
+ul li{
+  margin-right: 100px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: circle; */
+  font-size: 16px;
+  color: #323232;
+  margin-bottom: 13px;
+}
+ul li:hover{
+  color:#FDBE34
+}

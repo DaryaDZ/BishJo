@@ -80,7 +80,7 @@ const Software = () => {
               <Box sx={IconCell}>
                 <img src={AdobeAE} alt="" className="softwareIcon" />
                 <div className="blurSoftwarename">
-                  <Link to="/" className="linkstylesoftware">
+                  <Link to="/aftereffect" className="linkstylesoftware">
                   After Effect
                   </Link>
                   </div>
@@ -90,7 +90,7 @@ const Software = () => {
               <Box sx={IconCell}>
                 <img src={AdobeAI} alt="" className="softwareIcon" />
                 <div className="blurSoftwarename">
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/illustartor" className="linkstylesoftware">
                     Illustrator
                   </Link>
                   </div>
@@ -100,7 +100,7 @@ const Software = () => {
             <TableCell sx={tableCell}>
               <Box sx={IconCell}>  <img src={AdobePr} alt="" className="softwareIcon" />
               <div className="blurSoftwarename" >
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/premiere" className="linkstylesoftware">
                 Premiere Pro
                   </Link>
                   </div>
@@ -112,7 +112,7 @@ const Software = () => {
                 <img src={AdobePs} alt="" className="softwareIcon" />
                 <div className="blurSoftwarename">
               
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/photoshop" className="linkstylesoftware">
                     Photoshop
                   </Link>
                
@@ -125,7 +125,7 @@ const Software = () => {
             <TableCell sx={tableCell}>
               <Box sx={IconCell}><img src={AdobeXD} alt="" className="softwareIcon" />
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/adobexd" className="linkstylesoftware">
                 AdobeXD
                   </Link>
                   
@@ -136,7 +136,7 @@ const Software = () => {
               <Box sx={IconCell}>
               <img src={Blender} alt="" className="softwareIcon"/>
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/blender" className="linkstylesoftware">
                     Blender
                   </Link>
                 </div>
@@ -146,7 +146,7 @@ const Software = () => {
               <Box sx={IconCell}>
               <img src={Figma} alt="" className="softwareIcon"/>
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/figma" className="linkstylesoftware">
                 Figma
                   </Link>
                 </div>
@@ -156,7 +156,7 @@ const Software = () => {
               <Box sx={IconCell}>
               <img src={UnrealEngine} alt="" className="softwareIcon"/>
               <div className="blurSoftwareName">
-                <Link to="/" className="linkstylesoftware">
+                <Link to="/unrealEngine" className="linkstylesoftware">
                 Unreal Engine
                   </Link>
                 </div>

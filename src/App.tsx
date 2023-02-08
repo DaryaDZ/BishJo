@@ -9,6 +9,19 @@ import SignupLayout from './components/SignupLayout';
 import LoginsLayout from './components/LoginsLayout';
 import MasterLogin from './components/MasterLogin';
 import Apply from './page/Apply';
+import Questions from './components/Questions';
+import Support from './components/Support';
+import Photoshop from './components/Photoshop';
+import PremierePro from './components/PremierePro';
+import Illustarator from './components/Illustarator';
+import AfterEffect from './components/AfterEffect';
+import AdobeXD from './components/AdobeXD';
+import Blender from './components/Blender'
+import Figma from './components/Figma';
+import   UnrealEngine from './components/UnrealEngine'
+
+
+
 
 function App() {
   return (
@@ -18,7 +31,16 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='apply' element={<Apply />} />
-
+          <Route path="support" element={ <Support />} />
+          <Route path="questions" element={<Questions />} />
+          <Route path="photoshop" element={<Photoshop />} />
+          <Route path="premiere" element={<PremierePro />} />
+          <Route path="illustartor" element={<Illustarator />} />
+          <Route path="aftereffect" element={<AfterEffect />} />
+          <Route path="adobexd" element={<AdobeXD />} />
+          <Route path="blender" element={<Blender />} />
+          <Route path="figma" element={<Figma />} />
+          <Route path="unrealEngine" element={<UnrealEngine />} />
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
