@@ -12,7 +12,7 @@ const Photoshop = () => {
     flexDirection: "column",
     justifyContent: "center",
     color: "#EAF0FF",
-    // marginTop: "180px",
+    marginTop: "180px",
   };
 
   const str =
