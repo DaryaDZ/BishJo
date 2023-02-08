@@ -133,7 +133,7 @@ const Navbar = () => {
         {/* Menu */}
         <div style={ChildDiv}>
           <Button style={MenuBtn}> کتابخانه</Button>
-          <Button style={MenuBtn}>وبلاک</Button>
+          <Button style={MenuBtn}>وبلاگ</Button>
           <Button style={MenuBtn}>دوره ها </Button>
         </div>
         {/* Icon */}
