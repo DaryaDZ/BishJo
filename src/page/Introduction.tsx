@@ -8,6 +8,7 @@ import person from '../Assets/person.png';
 import school from '../Assets/school.png';
 import librarybooks from '../Assets/library_books.png';
 import img from '../Assets/young-business-man-talking-phone-working-computer1.png';
+import { Link } from 'react-router-dom';
 
 const Introduction = () => {
   const boxStyle = {
@@ -140,20 +141,22 @@ const Introduction = () => {
         >
           شرایط و قوانین تدریس
         </Button>
+        <Link to='./select'>
         <Button
           sx={{
             backgroundColor: "#FDBE34",
             fontFamily: "Vazirmatn",
             width: "150px",
             height: "47px",
-              color: "#323232",
-              '&:hover': {
-                backgroundColor: "#FDBE34",
+            color: "#323232",
+            '&:hover': {
+              backgroundColor: "#FDBE34",
             }
           }}
-        >
+          >
           خرید اشتراک
         </Button>
+          </Link>
       </Box>
     </Box>
   </Box>
