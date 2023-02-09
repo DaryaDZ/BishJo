@@ -21,6 +21,7 @@ import Photoshop from './components/Photoshop';
 // import UnrealEngine from './components/UnrealEngine'
 // import Sketch from './page/Sketch';
 import AboutBishjo from './page/AboutBishjo';
+import Select from './components/Select';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="questions" element={<Questions />} />
           <Route path="photoshop" element={<Photoshop />} />
           <Route path='aboutus' element={<AboutBishjo />} />
+          <Route path='select' element={<Select />} />
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
