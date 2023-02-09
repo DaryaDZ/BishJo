@@ -143,7 +143,7 @@ function Signup() {
           </div>
 
           <div className="recapat">
-            <img src={download} alt="" className="axyek" />
+            <img className="axyek" src={download} alt="" />
           </div>
           <div>
             <button

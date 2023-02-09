@@ -86,7 +86,7 @@ function MastersSignup() {
           
         <div className="recapat">
             
-            <img className="axyek" src={download} />
+            <img className="axyek" src={download} alt="" />
           </div>
         </div>
         <div>

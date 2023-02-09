@@ -40,7 +40,8 @@ function MasterLogin() {
                     <Button
                     sx={{
                       backgroundColor: "#fdbe34",
-                      color: "#323232",
+                        color: "#323232",
+                      fontFamily:"Vazirmatn"
                     }}
                     >
                       دریافت کد
@@ -122,7 +123,7 @@ function MasterLogin() {
         </div>
         <div className="hesab">
           حساب ندارید؟
-          <Link to="sinupslayout/signup" className="hesablink">
+          <Link to="/sinupslayout/signup" className="hesablink">
             ثبت نام
           </Link>
         </div>

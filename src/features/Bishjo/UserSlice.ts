@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+// import type { PayloadAction } from '@reduxjs/toolkit'
 
 export interface UserState{ 
-  value: users[];
+  users: users[];
 }
 
 interface users {
@@ -14,16 +14,20 @@ interface users {
 }
 
 const initialState: UserState={
-  value:[]
+  users:[]
 }
 
 export const UserSlice = createSlice({
   name: 'users',
   initialState,
   reducers: {
-    signupUser: (state, action:PayloadAction<users>) => {
-      
-      state.value.push(action.payload)
+    signupUser: (state, action) => {
+      state.users.push({
+        username: action.payload.username,
+        email: action.payload.email,
+        phone: action.payload.phone,
+        password:action.payload.password
+      })
       console.log(action.payload)
       
     }

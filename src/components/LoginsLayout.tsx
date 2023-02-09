@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Outlet } from "react-router-dom";
 import "./Signup.css";
 import { Link } from "react-router-dom";
@@ -6,6 +6,10 @@ import Logo from "../Assets/Logo.png";
 import FlashBack from "../Assets/FlashBack.png";
 
 function LoginsLayout() {
+  const [yellowBG, setYellowBG] = useState(false);
+  const handleBG = () => {
+    setYellowBG(!yellowBG)
+  }
   return (
     <div className="App">
       <div className="maindiv">
@@ -22,11 +26,11 @@ function LoginsLayout() {
 
       <div className="aHover">
         <Link to='login' >
-        <button className="YellowOne">دانشجو</button>
+        <button className={!yellowBG?"YellowOne":"MoverWhiteBG"} onClick={handleBG} >دانشجو</button>
         </Link>
 
-        <Link to="./masterslogin">
-          <button className="whiteOne">استاد</button>
+        <Link to="./masterslogin" style={{textDecoration:"none",color:"#323232"}}>
+        <button className={yellowBG? "MoveYellowBG" : "whiteOne"} onClick={handleBG}>استاد</button>
         </Link>
       </div>
 

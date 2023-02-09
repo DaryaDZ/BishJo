@@ -243,3 +243,22 @@ ul li:hover{
 .LinkNavbar:hover{
   color:#FDBE34
 }
+
+.photoshopIMg{
+width: 270px;
+height: 200px;
+margin-right: 20px;
+/* position: relative; */
+}
+a{
+  color:#EAF0FF;
+  text-decoration: none;
+}
+a:hover{
+  color:#FDBE34
+}
+.ModalImg{
+  width:650px;
+  height: 450px;
+
+}

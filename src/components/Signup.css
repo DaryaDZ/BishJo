@@ -1,82 +1,59 @@
 .App {
-  /* position: relative; */
-  /* width: 1440px; */
+
   height: 1024px;
   background: #283148;
 }
 
 .sabtenam {
-  /* position: absolute; */
+
   width: 159px;
   height: 38px;
   margin-left: 50px;
-  /* left: 700px; */
+
   top: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Headline/32px */
 
-  font-family: 'Vazirmatn';
+
+  font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 120%;
-  /* or 38px */
+
 
   text-align: center;
 
-  /* Secondary/Light */
 
-  color: #EAF0FF;
 
+  color: #eaf0ff;
 }
 
 .maindiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 50px; */
+
   margin: 50px 60px;
 }
 
 .bishjoLogo {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 6px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
 
-/* position: absolute; */
-height: 38px;
-left: 0px;
-right: 0px;
-top: 0px;
+
+  height: 38px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
 }
 
-/* .bishJo {
-  position: absolute;
-  /* width: 159px;
-  right: 640px;
-  float: right;
-  top: 64px;
 
-  width: 97px;
-height: 38px;
-
-font-family: 'Walter Turncoat';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 120%;
-text-align: center;
-color: #EAF0FF;
-
-flex: none;
-order: 1;
-flex-grow: 0;
-} */
 
 .returnLogo {
   text-decoration: none;
@@ -87,26 +64,24 @@ flex-grow: 0;
 }
 
 .Return {
-  /* position: absolute; */
+
   width: 85px;
   height: 37.78px;
   left: 156px;
   top: 64.22px;
-display: flex;
-align-items: center;
-justify-content: center;
-  /* Title/28px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 120%;
-  /* or 34px */
 
   text-align: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .aHover {
@@ -115,12 +90,11 @@ justify-content: center;
   height: 56px;
   left: 570px;
   top: 182px;
-background-color: green;
+  background-color: green;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Secondary/Light */
-border-color: yellow;
+  border-color: yellow;
   background: #eaf0ff;
   border-radius: 8px;
 }
@@ -137,8 +111,36 @@ border-color: yellow;
   background: #fdbe34;
   border-radius: 8px;
   border: none;
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
 
+  cursor: pointer;
+  animation-name: whiteMove;
+  animation-duration: 2s;
+  transition: width 2s;
+}
+@keyframes whiteMove {
+  0% {
+    right: 95px;
+    top: calc(50% - 46px / 2);
+  }
+  100% {
+    right: 105px;
+    top: calc(50% - 46px / 2);
+  }
+}
+.MoverWhiteBG {
+  position: absolute;
+  width: 92px;
+  height: 46px;
+  right: 102px;
+  top: calc(50% - 46px / 2);
+
+  /* Accent/Main */
+
+  background-color: #eaf0ff;
+  border-radius: 8px;
+  border: none;
+  font-family: "Vazirmatn";
   cursor: pointer;
 }
 
@@ -148,24 +150,39 @@ border-color: yellow;
   height: 19px;
   left: 32px;
   top: calc(50% - 19px / 2 + 0.5px);
-
-  /* label/16px */
-
   font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
-
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #323232;
 }
 
 .whiteOne {
+  position: relative;
+  width: 88px;
+  height: 46px;
+  left: 50px;
+  top: 0px;
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323232;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #eaf0ff;
+}
+
+.MoveYellowBG {
   position: absolute;
   width: 88px;
   height: 46px;
@@ -180,22 +197,27 @@ border-color: yellow;
 
   display: flex;
   align-items: center;
-  /* text-align: center; */
   justify-content: center;
 
   color: #323232;
   border: none;
   cursor: pointer;
-  border-radius: 8px;  
-  background-color: #eaf0ff;
-
-
+  border-radius: 8px;
+  background: #fdbe34;
+  animation-name: yellowMove;
+  animation-duration: 2s;
+  transition: width 2s;
 }
-
-/* .whiteOne:hover {
-  background-color: #eaf0ff;
-} */
-
+@keyframes yellowMove {
+  0% {
+    left: 95px;
+    top: 5px;
+  }
+  100% {
+    left: 111px;
+    top: 5px;
+  }
+}
 .whitetext {
   position: absolute;
   width: 48px;
@@ -203,25 +225,23 @@ border-color: yellow;
   left: 32px;
   top: calc(50% - 19px / 2 + 0.5px);
 
-  /* label/16px */
 
   font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
+
 
   justify-content: center;
   display: flex;
   align-items: center;
-  /* text-align: center; */
+
 
   color: #323232;
 }
 
 .first {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,31 +253,28 @@ border-color: yellow;
   left: calc(50% - 386px / 2);
   top: 278px;
 
-
   background: #313b52;
   border-radius: 16px;
 }
 
 .firsttext {
-  /* width: 61px; */
+
   height: 19px;
   float: right;
 
 
-  /* label/16px */
-  /* float: right; */
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
+
 
   text-align: center;
 
   /* Secondary/Light */
 
-  color: #EAF0FF;
+  color: #eaf0ff;
   /* Inside auto layout */
   flex: none;
   order: 0;
@@ -265,15 +282,13 @@ border-color: yellow;
 }
 
 .firstInput {
-  /* width: 334px;
-  height: 56px;
-     */
+
   width: 334px;
   height: 60px;
   text-align: right;
 
-  background: #EAF0FF;
-  border: 10px solid #313B52;
+  background: #eaf0ff;
+  border: 10px solid #313b52;
   border-radius: 12px;
 
   /* Inside auto layout */
@@ -289,24 +304,21 @@ border-color: yellow;
   right: 4.79%;
   top: 35.71%;
   bottom: 35.71%;
-  /* color: #1C1B1F; */
-  background: #1C1B1F;
+
+  background: #1c1b1f;
 }
 
 .SecondInput {
-  /* width: 334px;
-height: 56px; */
+
 
   width: 334px;
   height: 65px;
 
-
-  background: #EAF0FF;
-  border: 10px solid #313B52;
+  background: #eaf0ff;
+  border: 10px solid #313b52;
   border-radius: 14px;
 
   text-align: right;
-
 
   flex: none;
   order: 1;
@@ -315,23 +327,22 @@ height: 56px; */
 
 .Secondtext {
   margin-top: 14px;
-  /* width: 35px; */
+
   height: 19px;
   float: right;
 
   /* label/16px */
 
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  /* or 19px */
+ 
 
   text-align: center;
 
-
-  color: #EAF0FF;
+  color: #eaf0ff;
 
   flex: none;
   order: 0;
@@ -352,7 +363,7 @@ height: 56px; */
 
   /* Accent/Main */
 
-  background: #FDBE34;
+  background: #fdbe34;
   border-radius: 8px;
 
   /* Inside auto layout */
@@ -361,7 +372,7 @@ height: 56px; */
   order: 0;
   flex-grow: 0;
 
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -373,26 +384,22 @@ height: 56px; */
   /* Secondary/Dark */
 
   color: #323232;
-
 }
 
- .recapat {
-width: 246px;
-height: 60px;
-margin-top: 20px;
-text-align: center;
-justify-content: center;
-} 
+.recapat {
+  width: 5000px;
+  height: 60px;
+  margin-top: 20px;
+
+  background-color: red;
+}
 
 .axyek {
   width: 246px;
-height: 60px;
-text-align: center;
-justify-content: center;
-align-items: center;
-display: flex;
-/* left: 20px; */
-/* margin-left: 130px; */
+  height: 60px;
+margin-left: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-

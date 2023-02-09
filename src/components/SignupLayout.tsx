@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Outlet } from "react-router-dom";
 import "./Signup.css";
 import { Link } from "react-router-dom";
@@ -7,6 +7,11 @@ import FlashBack from "../Assets/FlashBack.png";
 
 
 function Signuplayout() {
+  const [yellowBG, setYellowBG] = useState(false);
+
+  const handleBG = () => {
+    setYellowBG(!yellowBG)
+  }
   return (
     <div className="App">
       <div className="maindiv">
@@ -22,12 +27,12 @@ function Signuplayout() {
       </div>
 
       <div className="aHover">
-        <Link to='signup' >
-        <button className="YellowOne">دانشجو</button>
+        <Link to='signup'style={{textDecoration:"none"}}>
+        <button className={!yellowBG?"YellowOne":"MoverWhiteBG"} onClick={handleBG} >دانشجو</button>
         </Link>
 
-        <Link to="./masterssignup">
-          <button className="whiteOne">استاد</button>
+        <Link to="./masterssignup" style={{textDecoration:"none",color:"#323232"}}>
+          <button className={yellowBG? "MoveYellowBG" : "whiteOne"} onClick={handleBG}>استاد</button>
         </Link>
       </div>
 
