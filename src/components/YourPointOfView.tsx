@@ -34,7 +34,8 @@ function YourPointOfView() {
                 direction: "rtl",
               }}
               // id="outlined-basic"
-              label="عنوان"
+              // label="عنوان"
+              placeholder="عنوان"
               type="text"
               // variant="outlined"
             />
@@ -57,7 +58,7 @@ function YourPointOfView() {
                 direction: "rtl",
               }}
               // id="outlined-basic"
-              label="نام"
+              placeholder="نام"
               type="text"
               // variant="outlined"
             />
@@ -76,7 +77,8 @@ function YourPointOfView() {
                 direction: "rtl",
 
               }}
-              label="ایمیل"
+              // label="ایمیل"
+              placeholder="ایمیل"
               type="text"
             />
           </Box>
