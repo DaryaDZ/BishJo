@@ -22,6 +22,7 @@ import Photoshop from './components/Photoshop';
 // import Sketch from './page/Sketch';
 import AboutBishjo from './page/AboutBishjo';
 import Select from './components/Select';
+import YourPointOfView from './components/YourPointOfView';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="photoshop" element={<Photoshop />} />
           <Route path='aboutus' element={<AboutBishjo />} />
           <Route path='select' element={<Select />} />
+          <Route path='pointofview' element={<YourPointOfView />} />
         </Route>
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            

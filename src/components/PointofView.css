@@ -1,0 +1,88 @@
+.divsdesign {
+  position: absolute;
+height: 439px;
+left: 118px;
+right: 120px;
+/* top: 2319px; */
+
+background: #3C4865;
+border-radius: 16px;
+}
+
+.txt13 {
+  position: absolute;
+width: 275px;
+height: 38px;
+right: 24px;
+top: 24px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 120%;
+
+text-align: right;
+
+color: #EAF0FF;
+}
+
+.txt14 {
+  position: absolute;
+  margin-top: 10px;
+  width: 202px;
+  height: 17px;
+  right: 24px;
+  top: 72px;
+  
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  
+  text-align: right;
+    
+  color: #EAF0FF;
+  
+}
+
+.txt15 {
+  position: absolute;
+height: 38px;
+left: 470px;
+right: 651px;
+top: 43px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 120%;
+
+text-align: right;
+
+color: #EAF0FF;
+}
+
+.input4 {
+  display: flex;
+flex-direction: row;
+/* justify-content: center; */
+/* align-items: center; */
+padding: 0px;
+width: 474px;
+direction: rtl;
+position: absolute;
+height: 200px;
+left: 24px;
+right: 651px;
+top: 105px;
+border: none;
+background: #EAF0FF;
+border-radius: 8px;
+}
+
+.input4 :hover {
+  border: none;
+}
