@@ -1,4 +1,4 @@
-import { TextareaAutosize, TextField } from "@mui/material";
+import { Button, TextareaAutosize, TextField } from "@mui/material";
 import { Box } from "@mui/system";
 // import Textarea from '@mui/joy/Textarea';
 import React from "react";
@@ -87,6 +87,25 @@ function YourPointOfView() {
           دیدگاه
         </div>
         <input className="input4" />
+        <Button 
+        sx={{
+          borderRadius: "8px",
+          marginTop: "338px",
+          fontFamily: "Vazirmatn",
+          left: "420px",
+          // right: "65px",
+          color: "#323232",
+          backgroundColor: "#FDBE34",
+          width: "75px",
+          height: "43px",
+          '&:hover': {
+            backgroundColor: "#FDBE34",
+          }
+        }}
+
+        >
+          ارسال
+        </Button>
       </div>
     </div>
   );
