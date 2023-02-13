@@ -12,13 +12,13 @@ import Apply from './page/Apply';
 import Questions from './components/Questions';
 import Support from './components/Support';
 import Photoshop from './components/Photoshop';
-// import PremierePro from './components/PremierePro';
-// import Illustarator from './components/Illustarator';
-// import AfterEffect from './components/AfterEffect';
-// import AdobeXD from './components/AdobeXD';
-// import Blender from './components/Blender'
-// import Figma from './components/Figma';
-// import UnrealEngine from './components/UnrealEngine'
+import PremierePro from './components/PremierePro';
+import Illustarator from './components/Illustarator';
+import AfterEffect from './components/AfterEffect';
+import AdobeXD from './components/AdobeXD';
+import Blender from './components/Blender'
+import Figma from './components/Figma';
+import UnrealEngine from './components/UnrealEngine'
 // import Sketch from './page/Sketch';
 import AboutBishjo from './page/AboutBishjo';
 import Select from './components/Select';
@@ -34,7 +34,16 @@ function App() {
           <Route path='apply' element={<Apply />} />
           <Route path="support" element={ <Support />} />
           <Route path="questions" element={<Questions />} />
+          
           <Route path="photoshop" element={<Photoshop />} />
+          <Route path="premiere" element={<PremierePro />} />
+          <Route path="illustartor" element={<Illustarator />} />
+          <Route path="aftereffect" element={<AfterEffect />} />
+          <Route path="adobexd" element={<AdobeXD />} />
+          <Route path="blender" element={<Blender />} />
+          <Route path="figma" element={<Figma />} />
+          <Route path="unrealEngine" element={<UnrealEngine />} />
+
           <Route path='aboutus' element={<AboutBishjo />} />
           <Route path='select' element={<Select />} />
           <Route path='pointofview' element={<YourPointOfView />} />

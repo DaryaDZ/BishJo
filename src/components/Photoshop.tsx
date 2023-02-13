@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AdobePs from "../Assets/Application/Adobeps.png";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { Box, Button, Collapse, Typography, Zoom, Modal } from "@mui/material";
+import { Box, Button, Collapse, Typography,  Modal } from "@mui/material";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import img1 from "../Assets/photoshop/img1.jpg";
 import img2 from "../Assets/photoshop/img2.jpg";
