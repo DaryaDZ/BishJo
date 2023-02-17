@@ -9,6 +9,8 @@ import school from '../Assets/school.png';
 import librarybooks from '../Assets/library_books.png';
 import img from '../Assets/young-business-man-talking-phone-working-computer1.png';
 import { Link } from 'react-router-dom';
+import toppng1 from '../Assets/toppng1.png';
+import { useSelector } from "react-redux";
 
 const Introduction = () => {
   const boxStyle = {
@@ -26,14 +28,15 @@ const Introduction = () => {
   const tableCell = {
     border: "none",
   };
-
+  const userInfo = useSelector((state: any) => state.users.currentUser);
+  console.log(userInfo);
 
   return (
     <Box sx={boxStyle}>
     {/* left  */}
     <Box sx={{ width: "50%", display:"flex",alignItems:"center",justifyContent:"center" }}>
-      
-<img src={img} alt=""/>
+     {userInfo ? <img src={toppng1} alt=""/> : <img src={img} alt=""/>} 
+
 
     </Box>
     {/* right */}

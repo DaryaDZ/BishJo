@@ -23,6 +23,8 @@ import UnrealEngine from './components/UnrealEngine'
 import AboutBishjo from './page/AboutBishjo';
 import Select from './components/Select';
 import YourPointOfView from './components/YourPointOfView';
+import UserProfile from './components/UserProfile';
+import MasterProfile from './components/MasterProfile';
 
 function App() {
   return (
@@ -48,6 +50,9 @@ function App() {
           <Route path='select' element={<Select />} />
           <Route path='pointofview' element={<YourPointOfView />} />
         </Route>
+        <Route path="userprofile" element={<UserProfile />} />
+        <Route path="masteprofile" element={<MasterProfile />} />
+
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
           <Route path='signup' element={<Signup />} />

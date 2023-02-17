@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Signup.css";
-import { Button, TextField, InputAdornment } from "@mui/material";
+import { TextField, InputAdornment } from "@mui/material";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
@@ -10,6 +10,7 @@ import download from "../Assets/download.jpg";
 // import { Construction } from "@mui/icons-material";
 import { signupUser } from "../features/Bishjo/UserSlice";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const dispatch = useDispatch();
@@ -17,6 +18,12 @@ function Signup() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const SignUp = () => {
+    dispatch(signupUser({username,email,phone,password}))
+    navigate('/loginslayout/login')
+}
 
   return (
     <div className="App">
@@ -148,9 +155,7 @@ function Signup() {
           <div>
             <button
               className="signupBtn"
-              onClick={() =>
-                dispatch(signupUser({username,email,phone,password}))
-              }
+              onClick={SignUp}
             >
               ثبت نام
             </button>
