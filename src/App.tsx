@@ -23,15 +23,12 @@ import UnrealEngine from './components/UnrealEngine'
 import AboutBishjo from './page/AboutBishjo';
 import Select from './components/Select';
 import YourPointOfView from './components/YourPointOfView';
-<<<<<<< HEAD
 import WebsitesCategory from './components/WebsitesCategory';
 import Design from './components/Design';
 import Categories from './components/Categories';
 import SingleCourse from './components/SingleCourse';
-=======
 import UserProfile from './components/UserProfile';
 import MasterProfile from './components/MasterProfile';
->>>>>>> d6614044c2203727a10ed818c9d1e4b2211a0189
 
 function App() {
   return (
