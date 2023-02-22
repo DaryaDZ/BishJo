@@ -268,7 +268,9 @@ const Navbar = () => {
 
         {/* Menu */}
         <div style={ChildDiv}>
+          <Link to="./bookstore" >
           <Button sx={MenuBtn}> کتابخانه</Button>
+          </Link>
           <Button sx={MenuBtn}>وبلاگ</Button>
           <Link to='./category' >
           <Button sx={MenuBtn}>دوره ها </Button>

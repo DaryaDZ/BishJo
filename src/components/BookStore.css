@@ -1,0 +1,31 @@
+.bookstxt {
+  width: 779px;
+height: 53px;
+top: 204px;
+margin-left: 200px;
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 120%;
+text-align: center;
+color: #EAF0FF;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.bookstxt1 {
+  color: #EAF0FF;
+  width: 935px;
+height: 34px;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 10px;
+margin-left: 130px;
+font-size: 20px;
+font-family: 'Vazirmatn';
+}
+
