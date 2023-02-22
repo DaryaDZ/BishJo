@@ -87,7 +87,7 @@ export const MastersSlice = createSlice({
   reducers: {
     signUpMaster: (state, action) => {
       state.Masters.push({
-        id:Math.floor(Math.random() * 1000 - 1) + 1,
+        id:uuidv4(),
         Name:null,
         username: action.payload.username,
         phoneNumber: action.payload.phoneNumber,

@@ -201,7 +201,7 @@ const [courseID,setCourseID]=useState<any>()
                     component="video"
                     sx={{ width: "100%", height: "500px" }}
                     controls
-                      
+
                     image={
 "https://aspb20.cdn.asset.aparat.com/aparat-video/14ecce5bb86f2dc1e5048f60e12f31db20898355-240p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImVmNjg1ODI3MWI5NzgzNWJjMjRkYzViODRjNjg0NTk4IiwiZXhwIjoxNjc3MDY2ODQ0LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Wt13iF1m0WvbddkOMW6XHk0DStZxgMmfFlpfQ32WoHk"
                     }
@@ -478,7 +478,9 @@ const [courseID,setCourseID]=useState<any>()
                 >
                   {item.courses[0].catergory}
                 </InputLabel>
-          
+                {
+                  
+          }
                 <Menu
                   open={open}
                   id="dropdown"
@@ -490,39 +492,13 @@ const [courseID,setCourseID]=useState<any>()
                   TransitionComponent={Fade}
                   sx={{ width: "100%" }}
                 >
-                    {/* {dastebandi.map((course: any) => {
-                      
-                      return <>
-                      <MenuItem
-                          sx={{
-                            direction: "rtl",
-                            fontFamily: "Vazirmatn",
-                            width: "95%",
-                            marginLeft: "475px",
-                            borderRadius: "16px",
-                          }}
-                      //  onClick={()=>setCourseID(course)}  
-                        >{course}</MenuItem>
-                      </>
-                    })} */}
+                    
                 </Menu>
-                  {/* {
-                    categorySelected = item.courses.filter((element: any) => { return element.catergory === courseID })
-
-                  } */}
-                <Box sx={{margin:"50px 0px" ,display:"flex",alignItems:"center",justifyContent:"rigt"}}>
-                  {/* {
-                    categorySelected.map((item: any) => {
-                      return <>
-                        <Card>
-                          {item.courseName}
-                      </Card>
-                      </>
-                  })
-      
-                  } */}
                  
-</Box>
+                <Box sx={{margin:"50px 0px" ,display:"flex",alignItems:"center",justifyContent:"rigt"}}>
+         
+                 
+                </Box>
               </>
             );
        
