@@ -23,10 +23,15 @@ import UnrealEngine from './components/UnrealEngine'
 import AboutBishjo from './page/AboutBishjo';
 import Select from './components/Select';
 import YourPointOfView from './components/YourPointOfView';
+<<<<<<< HEAD
 import WebsitesCategory from './components/WebsitesCategory';
 import Design from './components/Design';
 import Categories from './components/Categories';
 import SingleCourse from './components/SingleCourse';
+=======
+import UserProfile from './components/UserProfile';
+import MasterProfile from './components/MasterProfile';
+>>>>>>> d6614044c2203727a10ed818c9d1e4b2211a0189
 
 function App() {
   return (
@@ -61,6 +66,9 @@ function App() {
           <Route path='select' element={<Select />} />
           <Route path='pointofview' element={<YourPointOfView />} />
         </Route>
+        <Route path="masterprofile" element={<MasterProfile />}></Route>
+        <Route path="userprofile" element={<UserProfile />} />
+
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
           <Route path='signup' element={<Signup />} />

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './Question.css';
 import Divider from "../Assets/Divider.png";
@@ -23,6 +24,13 @@ const Questions = () => {
       {/* <img src={Divider} alt=""  className="TadresIcon" /> */}
         </div>
       </div>
+=======
+import React from 'react'
+const Questions = () => {
+  return (
+    <div>
+
+>>>>>>> d6614044c2203727a10ed818c9d1e4b2211a0189
     </div>
   )
 }

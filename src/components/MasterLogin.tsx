@@ -1,38 +1,74 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Login.css";
 import { Button, TextField, InputAdornment } from "@mui/material";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+// import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import EdgesensorHighIcon from '@mui/icons-material/EdgesensorHigh';
 import Checkbox from "@mui/material/Checkbox";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {loginMaster} from '../features/Bishjo/MasterSlice'
+import {useNavigate} from 'react-router-dom'
+// interface TimerState{
+//   time: number,
+//   seconds: number,
+//   minuts:number,
+// }
+
 
 function MasterLogin() {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+  const [phoneOremailOrusername, setphoneOremailOrusername] = useState<string>("");
+  const [tempPasword, setTempPassword] = useState<string>("")
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+//   const [Timer, setTimer] = useState<TimerState>({
+//     time:60,
+//     seconds: time -Math.floor((time-1)/60)*60-1,
+//     minuts:Math.floor((time-1)/60),
+// })
+//   const TimerFunction = () => {
+
+// }
+  // let  counter:number = 0.2;
+
+  const MasterLogin = () => {
+    
+    if (phoneOremailOrusername === "" || tempPasword == "") {
+      alert("شماره تلفن و یارمز موقت را وارد کنید")
+      // console.log( "phoneNumber"+`${ phoneOremailOrusername}`)
+    }
+    else {
+      dispatch(
+        loginMaster(phoneOremailOrusername)
+      )
+       
+      navigate('/masterprofile')
+    }
+    
+  }
+
+
 
   return (
     <div>
       <div className="loginsContainer">
         <div className="inputsContainer">
-          <label className="text">نام کاربری یا ایمیل یا شماره تلفن</label>
+          <label className="text"> شماره تلفن</label>
           <TextField
                placeholder=" ... شماره تلفن یا نام کاربری خود را وارد کنید "
                type="text"
               sx={{
-                // width: openInput ? "450px" : "",
                 width: "334px",
-                // height: "60px",
                 textAlign: "right",
                 transition: "width 2s ease-in",
-                // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
                 color: '#1C1B1F',
-
-
               }}
               InputProps={{
                 startAdornment: (
@@ -46,6 +82,7 @@ function MasterLogin() {
                     >
                       دریافت کد
                     </Button>
+                    {/* {`${Timer.minuts}:${Timer.seconds <= 10 ?`0${Timer.seconds}`:Timer.seconds}`} */}
                   </InputAdornment>
                 ),
                 endAdornment: (
@@ -56,7 +93,9 @@ function MasterLogin() {
                 style:{
                   height:"50px"
                 }
-              }}
+            }}
+            value={phoneOremailOrusername}
+            onChange={(e)=>setphoneOremailOrusername(e.target.value)}
             />
         </div>
         <div>
@@ -65,19 +104,14 @@ function MasterLogin() {
                placeholder="کد یکبار مصرف ارسال شده را وارد کنید..."
                type="password"
               sx={{
-                // width: openInput ? "450px" : "",
                 width: "334px",
-                // height: "60px",
                 textAlign: "right",
                 transition: "width 2s ease-in",
-                // backgroundColor: "#3C4865",
                 borderRadius: "12px",
                 border: "10px solid #313b52",
                 backgroundColor: "#eaf0ff",
                 justifyContent: 'center',
                 direction: 'rtl',
-
-
               }}
               InputProps={{
                 startAdornment: (
@@ -88,7 +122,9 @@ function MasterLogin() {
                 style:{
                   height:"50px"
                 }
-              }}
+            }}
+            value={tempPasword}
+            onChange={(e)=>setTempPassword(e.target.value)}
             />
           {/* <input
             className="input"
@@ -119,7 +155,7 @@ function MasterLogin() {
           <div className="forgotPass">رمز را فراموش کردید؟</div>
         </div>
         <div>
-          <button className="signupBtn">ورود </button>
+          <button className="signupBtn" onClick={MasterLogin}>ورود </button>
         </div>
         <div className="hesab">
           حساب ندارید؟
