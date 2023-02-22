@@ -1,0 +1,65 @@
+.titLE {
+
+
+  width: 240px;
+height: 48px;
+justify-content: center;
+display: flex;
+color: #EAF0FF;
+font-family: 'Vazirmatn';
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+margin-left: 550px;
+}
+
+.maiin {
+  justify-content: center;
+  align-items: center;
+}
+
+.devidersimg {
+  margin-top: 40px;
+  margin-left: 180px;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+height: 0px;
+
+border: 1px dashed #EAF0FF;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.tag1 {
+  
+ margin-top: 10px; 
+width: 230px;
+height: 29px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+
+text-align: right;
+
+color: #EAF0FF;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+justify-content: right;
+float: right;
+
+}
+
+.tag2 {
+  margin-right: 200px;
+  display: flex;
+}

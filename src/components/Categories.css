@@ -1,0 +1,105 @@
+.mapsname {
+  /* position: absolute; */
+height: 120px;
+left: 0px;
+right: 0px;
+top: 180px;
+
+background: #1F2533;
+
+backdrop-filter: blur(8px);
+
+border-radius: 0px;
+border-radius: 8px;
+
+padding: 5px;
+}
+
+.priceContainer {
+  width: 68px;
+height: 14px;
+right: 12px;
+top: 84px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+
+text-align: right;
+float: right;
+
+color: #EAF0FF;
+}
+
+.TimesContainer {
+  width: 48px;
+height: 18px;
+
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 150%;
+
+text-align: right;
+direction: rtl;
+
+
+color: #EAF0FF;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.PRICE {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.namesContainer {
+  color: #EAF0FF;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.mastersNAME {
+  color: #EAF0FF;
+  display: flex;
+  width: 68px;
+  height: 14px;
+  right: 12px;
+  top: 84px;
+  
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+
+  margin-top: 20px;
+  margin-right: 5px;
+  text-align: right;
+  
+  }
+
+/* .boxICON {
+  width: 17.33px;
+height: 22.47px;
+left: 19.33px;
+top: 86.53px;
+display: flex;
+margin-left: 30px;
+} */
+
+.ICONBOX {
+  display: flex;
+margin-left: 20px;
+margin-top: 10px;
+}

@@ -23,6 +23,10 @@ import UnrealEngine from './components/UnrealEngine'
 import AboutBishjo from './page/AboutBishjo';
 import Select from './components/Select';
 import YourPointOfView from './components/YourPointOfView';
+import WebsitesCategory from './components/WebsitesCategory';
+import Design from './components/Design';
+import Categories from './components/Categories';
+import SingleCourse from './components/SingleCourse';
 
 function App() {
   return (
@@ -34,6 +38,15 @@ function App() {
           <Route path='apply' element={<Apply />} />
           <Route path="support" element={ <Support />} />
           <Route path="questions" element={<Questions />} />
+
+          <Route path="/category" element={<WebsitesCategory />} >
+          <Route path="design" element={<Design />} />
+          <Route path="singlecategory" element={<Categories />} />
+
+
+          </Route>
+
+          <Route path="singlecourse/:id" element={<SingleCourse />} />
           
           <Route path="photoshop" element={<Photoshop />} />
           <Route path="premiere" element={<PremierePro />} />

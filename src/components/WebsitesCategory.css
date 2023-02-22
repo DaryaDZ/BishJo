@@ -1,0 +1,63 @@
+
+.WebsiteCategorysWrapper {
+  display: flex;
+  /* background-color: aqua; */
+  width: 1000px;
+  margin: 40px;
+  /* margin-left: 40px; */
+}
+
+.SideBar {
+
+  margin-bottom: 490px;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 50px);
+  position: sticky;
+  /* justify-content: right; */
+  /* margin-left: 950px; */
+
+}
+
+.SidebarWrapper {
+  
+justify-content: right;
+display: flex;
+width: 183px;
+height: 300px;
+background: #3C4865;
+border-radius: 16px;
+flex: none;
+float: right;
+
+}
+
+.SidebarTitle {
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FDBE34;
+  margin-top: 15px;
+  margin-left: 30px;
+  /* margin-right: 10px; */
+}
+
+.ul1 :hover {
+  /* display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 12px;
+gap: 4px; */
+
+width: 83px;
+height: 36px;
+
+
+background: #FDBE34;
+border-radius: 19px;
+
+
+}
+

@@ -16,6 +16,7 @@ const Support = () => {
     fontSize: "32px",
     marginTop: "60px",
   };
+ 
 
   return (
     <div>
@@ -65,7 +66,8 @@ const Support = () => {
         </Box>
       </div>
       <div>
-        <input 
+        <input
+        id="input5" 
         className="input5"
         // style={InputsStyle} 
         placeholder="دیدگاه شما.........."

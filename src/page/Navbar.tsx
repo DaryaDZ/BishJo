@@ -127,7 +127,9 @@ const Navbar = () => {
         <div style={ChildDiv}>
           <Button sx={MenuBtn}> کتابخانه</Button>
           <Button sx={MenuBtn}>وبلاگ</Button>
+          <Link to='./category' >
           <Button sx={MenuBtn}>دوره ها </Button>
+          </Link>
         </div>
         {/* Icon */}
         <div style={ChildDiv}>

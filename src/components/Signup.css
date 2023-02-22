@@ -391,13 +391,12 @@
   height: 60px;
   margin-top: 20px;
 
-  background-color: red;
 }
 
 .axyek {
   width: 246px;
   height: 60px;
-margin-left: 500px;
+  /* margin-left: 200; */
   display: flex;
   justify-content: center;
   align-items: center;

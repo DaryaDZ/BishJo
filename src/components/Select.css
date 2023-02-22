@@ -415,10 +415,9 @@ background-color: red;
   border-radius: 8px;
   direction: rtl;
   color:#363636;
-
 }
 
-/* 
-.input5 ::placeholder {
-  background-color: brown;
-}  */
+#input5::placeholder {
+  color: black;
+  padding: 400px;
+  }

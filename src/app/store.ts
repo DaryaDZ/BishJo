@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import UserReducer from '../features/Bishjo/UserSlice';
+import CourseReducer from '../features/Bishjo/CourseSlice'
 export const store = configureStore({
   reducer: {
     users: UserReducer,
+    courses:CourseReducer
     
   },
 })
