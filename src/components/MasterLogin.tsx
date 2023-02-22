@@ -9,7 +9,7 @@ import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {loginMaster} from '../features/Bishjo/MasterSlice'
-
+import {useNavigate} from 'react-router-dom'
 // interface TimerState{
 //   time: number,
 //   seconds: number,
@@ -23,6 +23,7 @@ function MasterLogin() {
   const [phoneOremailOrusername, setphoneOremailOrusername] = useState<string>("");
   const [tempPasword, setTempPassword] = useState<string>("")
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 //   const [Timer, setTimer] = useState<TimerState>({
 //     time:60,
 //     seconds: time -Math.floor((time-1)/60)*60-1,
@@ -36,12 +37,15 @@ function MasterLogin() {
   const MasterLogin = () => {
     
     if (phoneOremailOrusername === "" || tempPasword == "") {
-      alert("شماره تلفن و یارمز عبور را وارد کنید")
+      alert("شماره تلفن و یارمز موقت را وارد کنید")
       // console.log( "phoneNumber"+`${ phoneOremailOrusername}`)
     }
     else {
-     dispatch(
-      loginMaster(phoneOremailOrusername))
+      dispatch(
+        loginMaster(phoneOremailOrusername)
+      )
+       
+      navigate('/masterprofile')
     }
     
   }

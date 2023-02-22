@@ -50,8 +50,8 @@ function App() {
           <Route path='select' element={<Select />} />
           <Route path='pointofview' element={<YourPointOfView />} />
         </Route>
+        <Route path="masterprofile" element={<MasterProfile />}></Route>
         <Route path="userprofile" element={<UserProfile />} />
-        <Route path="masteprofile" element={<MasterProfile />} />
 
         <Route path='/sinupslayout' element={<SignupLayout />} >            
           <Route path='masterssignup' element={<MastersSignup />} />            
