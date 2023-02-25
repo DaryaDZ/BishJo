@@ -30,6 +30,8 @@ import SingleCourse from './components/SingleCourse';
 import UserProfile from './components/UserProfile';
 import MasterProfile from './components/MasterProfile';
 import BookStore from './components/BookStore';
+import PanelsLayout from './Panel/PanelsLayout';
+import DashBoard from './Panel/DashBoard';
 
 function App() {
   return (
@@ -76,7 +78,12 @@ function App() {
           <Route path='/loginslayout' element={<LoginsLayout />} >
           <Route path='masterslogin' element={<MasterLogin />} />
           <Route path='login' element={<Login />} />
-            </Route>            
+            </Route>   
+
+            <Route path='/panel' element={<PanelsLayout /> } >
+              <Route path='dashboard' element={<DashBoard /> } />
+            </Route>
+                      
 
 
 

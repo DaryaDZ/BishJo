@@ -1,0 +1,10 @@
+.DashboardCategories {
+  padding: 4px 15px;
+gap: 10px;
+margin-top: 5px;
+}
+
+.CategoryContainer {
+  padding: 19px;
+  margin-bottom: 20px;
+}
