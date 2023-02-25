@@ -3,6 +3,10 @@ import { Button, TextField, InputAdornment } from "@mui/material";
 import searchICON from "../Assets/searchICON.png";
 import favorite from "../Assets/WhyIcon/favorite.png";
 import Star from "../Assets/WhyIcon/Star.png"
+import sell from "../Assets/sell.png"
+import CTA from "../Assets/CTA.png"
+
+
 
 import { ShowAllCourse } from "../features/Bishjo/CourseSlice"
 import { ShowAllBooks } from "../features/Bishjo/BooksSlice"
@@ -88,7 +92,11 @@ console.log(AllBooks.payload.books.books)
         direction: "rtl",
 
       }}>
-          <div style={{display: "flex",}}>
+        
+          <div 
+          style={{
+            display: "flex",}}
+          >
        
             <div>
               <img style={{
@@ -98,9 +106,12 @@ console.log(AllBooks.payload.books.books)
               }} 
               src={require(`../Assets/Books/${item.picture}`)} />
             </div>
-            
+
+            <div>            
             <div style={{display: "flex", justifyContent: "space-between", direction: "ltr",
-              width: "100%",
+              // width: "100%",
+              width: "560px",
+
           
           }}>
 
@@ -110,7 +121,6 @@ console.log(AllBooks.payload.books.books)
                 justifyContent: "left",
                 alignItems: "left",
                 marginLeft: "4px",
-               // marginRight: "300px",
 
               }} >
                 <div 
@@ -157,9 +167,35 @@ console.log(AllBooks.payload.books.books)
 
           </div>
 
+          <div style={{width: "520px", color: "#EAF0FF", fontSize: "12px", marginTop: "15px"}}>
+          <label >
+            {item.information}
+          </label>
+          </div>
 
-      {/* enheraf */}
-         
+          <div style={{marginTop: "80px", justifyContent: "space-between", display: "flex",}}>
+
+          <div style={{display: "flex",}}>
+          <div style={{justifyContent: "center", alignItems: "center",
+           }}>
+            <img src={sell} style={{width: "15px", height: "15px"}} />
+          </div>
+          <div style={{color: "#EAF0FF",fontSize: "12px", marginRight: "5px"}}>کیفیت کاری</div>
+          </div>
+
+          <div style={{display: "flex",}}>
+            <div style={{color: "#EAF0FF",fontSize: "12px", marginLeft: "5px", justifyContent: "center", alignItems: "center" }}>
+            مشاهده و دانلود
+            </div>
+            <div >
+              <img style={{width: "20px", height: "20px"}} src={CTA}  />
+            </div>
+          </div>
+
+          </div>
+
+      </div>
+
       </div>
     </div>
    </div>
