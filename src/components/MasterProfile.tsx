@@ -3,6 +3,8 @@ import BrandIcon from "../Assets/Brand Icon.png";
 import notifications from "../Assets/notifications.png";
 import img from "../Assets/img.jpg";
 import { useDispatch, useSelector } from "react-redux";
+import star from "../Assets/star.png";
+import AddingCourse from "../Assets/Adding Course.png";
 import {
   Box,
   Typography,
@@ -10,10 +12,10 @@ import {
   Button,
   Menu,
   MenuItem,
-  TextField,
   InputLabel,
   Fade,
-  Card
+  Card,
+  CardContent,
 } from "@mui/material";
 import vector from "../Assets/Vector.png";
 import vector1 from "../Assets/Vector (1).png";
@@ -24,14 +26,25 @@ import Footer from "../page/Footer";
 import AddingCTA from "../Assets/AddingCTA (3).png";
 import AddingCTA1 from "../Assets/AddingCTA (1).png";
 import AddingCTA2 from "../Assets/AddingCTA (2).png";
+import { showAllMaster } from "../features/Bishjo/MasterSlice";
+import { Link } from "react-router-dom";
 
 const MasterProfile = () => {
-
-  let categorySelected: any=[];
-  let dastebandi: any = [];
-  let mapped: any = [];
-  
   const masterInfo = useSelector((state: any) => state.masters.CurrentMaster);
+
+  const AllMaster: any = useSelector(showAllMaster);
+  // console.log(AllMaster)
+  const cat = masterInfo.map((item: any) => {
+    return AllMaster.payload.courses.courses.filter(
+      (element: any) => element.masterID === item.id
+    );
+  });
+  const x: any = [];
+  const [file, setFile] = useState("");
+  const [img, setImg] = useState("")
+  const [mov,setMov]=useState("")
+
+
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
   const data = [
     { name: "Group A", value: 400 },
@@ -39,7 +52,7 @@ const MasterProfile = () => {
     { name: "Group C", value: 300 },
     { name: "Group D", value: 200 },
   ];
-const [courseID,setCourseID]=useState<any>()
+  const [courseCategory, setCourseID] = useState<any>();
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel: any = ({
     cx,
@@ -66,7 +79,7 @@ const [courseID,setCourseID]=useState<any>()
       </text>
     );
   };
-  
+
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -75,13 +88,17 @@ const [courseID,setCourseID]=useState<any>()
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+
+  const movieInfo = cat.map((item: any) =>
+    item.filter((i: any) => i.category == courseCategory)
+  );
   const boxStyle = {
     display: "flex",
     alignItems: "center",
     flexDirection: "space-between",
     justifyContent: "center",
     color: "#EAF0FF",
-    // marginTop: "15px",
     padding: "60px",
   };
   const NavBarStyle = {
@@ -89,7 +106,6 @@ const [courseID,setCourseID]=useState<any>()
     alignItems: "center",
     justifyContent: "space-between",
     padding: "50px",
-    // marginRight: "50px",
   };
   const ChildBox = {
     display: "flex",
@@ -97,7 +113,6 @@ const [courseID,setCourseID]=useState<any>()
     justifyContent: "center",
   };
   const BOxLeffChildstyle = {
-    // backgroundColor: "blue",
     width: "100%",
     display: "flex",
     alignItems: "center",
@@ -133,7 +148,6 @@ const [courseID,setCourseID]=useState<any>()
             );
           })}
 
-          {/* <img src={ } alt="" /> */}
 
           <img
             src={notifications}
@@ -151,7 +165,6 @@ const [courseID,setCourseID]=useState<any>()
             <Box sx={boxStyle}>
               <Box
                 sx={{
-                  // backgroundColor: "red",
                   flex: "3",
                   display: "flex",
                   alignItems: "center",
@@ -201,11 +214,9 @@ const [courseID,setCourseID]=useState<any>()
                     component="video"
                     sx={{ width: "100%", height: "500px" }}
                     controls
-
-                    image={
-"https://aspb20.cdn.asset.aparat.com/aparat-video/14ecce5bb86f2dc1e5048f60e12f31db20898355-240p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImVmNjg1ODI3MWI5NzgzNWJjMjRkYzViODRjNjg0NTk4IiwiZXhwIjoxNjc3MDY2ODQ0LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Wt13iF1m0WvbddkOMW6XHk0DStZxgMmfFlpfQ32WoHk"
-                    }
-                    
+                    // image={
+                    //   "https://aspb20.cdn.asset.aparat.com/aparat-video/14ecce5bb86f2dc1e5048f60e12f31db20898355-240p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImVmNjg1ODI3MWI5NzgzNWJjMjRkYzViODRjNjg0NTk4IiwiZXhwIjoxNjc3MDY2ODQ0LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Wt13iF1m0WvbddkOMW6XHk0DStZxgMmfFlpfQ32WoHk"
+                    // }
                   ></CardMedia>
                 </Box>
                 <Box sx={BOxLeffChildstyle}>
@@ -360,7 +371,6 @@ const [courseID,setCourseID]=useState<any>()
                       <hr />
                       <Box
                         sx={{
-                          // backgroundColor: "red",
                           marginTop: "20px",
                           display: "flex",
                           alignItems: "center",
@@ -456,12 +466,9 @@ const [courseID,setCourseID]=useState<any>()
           </label>
         </Box>
         <Box sx={{ width: "95%", direction: "rtl", margin: "50px 10px" }}>
-          {masterInfo.map((item: any) => {
+          {cat.map((item: any) => {
             return (
               <>
-               
-                
-                {/* {console.log(item.courses)} */}
                 <InputLabel
                   id="dropdown"
                   onClick={handleClick}
@@ -473,14 +480,12 @@ const [courseID,setCourseID]=useState<any>()
                     fontFamily: "Vazirmatn",
                     padding: "14px",
                     width: "45%",
-                    borderRadius: "16px",
+                    borderRadius: "10px",
                   }}
                 >
-                  {item.courses[0].catergory}
+                  {item[0].category}
                 </InputLabel>
-                {
-                  
-          }
+
                 <Menu
                   open={open}
                   id="dropdown"
@@ -492,20 +497,144 @@ const [courseID,setCourseID]=useState<any>()
                   TransitionComponent={Fade}
                   sx={{ width: "100%" }}
                 >
-                    
+                  {item.map((element: any) => {
+                    if (!x.includes(element.category)) {
+                      x.push(element.category);
+                    }
+                  })}
+                  {x.map((item: any) => {
+                    return (
+                      <MenuItem
+                        onClick={() => setCourseID(item)}
+                        sx={{
+                          width: "100%",
+                          marginLeft: "455px",
+                          borderRadius: "16pxx",
+                          fontFamily: "Vazirmatn",
+                        }}
+                      >
+                        {item}
+                      </MenuItem>
+                    );
+                  })}
                 </Menu>
-                 
-                <Box sx={{margin:"50px 0px" ,display:"flex",alignItems:"center",justifyContent:"rigt"}}>
-         
-                 
-                </Box>
               </>
             );
-       
           })}
         </Box>
       </Box>
-      <Box></Box>
+
+      {courseCategory ? (
+        <Box
+          sx={{
+            margin: "100px 50px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "rigt",
+            direction: "rtl",
+          }}
+        >
+             <input
+                    type="file"
+                    id="fileID"
+                    accept="video/*"
+                    style={{ display: "none" }}
+                  />
+                  <label htmlFor="fileID" style={{ marginLeft: "20px",marginBottom:"150px" }}>
+                    <img src={AddingCourse} alt="" />
+                  </label>
+          {movieInfo.map((item: any) => {
+            return item.map((i: any) => {
+              return (
+                <>
+                  <Link to={`/singlecourse/${i.id}`}>
+                    <Card
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        flexDirection: "column",
+                        marginLeft: "20px",
+                        hieght: "800px",
+                        backgroundColor: "#313B52",
+                        color: "#EAF0FF",
+                        borderRadius: "16px",
+                        height: "350px",
+                      }}
+                    >
+                      <CardMedia
+                        component="img"
+                        height="194"
+                        image={require(`../Assets/${i.picture}`)}
+                        alt=""
+                      />
+
+                      <CardContent
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                          direction: "ltr",
+                          width: "100%",
+                        }}
+                      >
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <img
+                            style={{
+                              height: "10px",
+                              width: "10px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                            src={star}
+                            alt=""
+                          />
+
+                          {i.rate}
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          {i.time}
+                        </div>
+                      </CardContent>
+
+                      <div style={{}}>{i.name}</div>
+                      <div
+                        style={{
+                          direction: "rtl",
+                          width: "90%",
+                          margin: "10px",
+                        }}
+                      >
+                        {" "}
+                        {AllMaster.payload.masters.Masters.map((obj: any) => {
+                          return <>{obj.id === i.masterID ? obj.Name : ""}</>;
+                        })}
+                      </div>
+                    </Card>
+                  </Link>
+            
+                </>
+              );
+            });
+          })}
+             
+        </Box>
+      ) : (
+        ""
+      )}
       <Footer />
     </>
   );

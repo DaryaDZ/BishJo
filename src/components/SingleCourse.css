@@ -121,11 +121,16 @@ justify-content: right;
 .FRAMEcontainer2 {
   flex: 2;
   width: 500px;
+  
   margin-left: 100px;
-  background-color: blue;
+  /* background-color: blue; */
   border-radius: 16px;
 }
+.movieTrailer{
+  width: 620px;
+  height: 100%;
 
+}
 .CONTAINER11 {
   display: flex;
   direction: rtl;
@@ -242,7 +247,7 @@ border: none;
   width: 100px;
 height: 78px;
 top: 106px;
-
+text-align: justify;
 font-family: 'Vazirmatn';
 font-style: normal;
 font-weight: 400;
@@ -270,6 +275,9 @@ color: #EAF0FF;
 .chngizimg {
   width: 50px;
 height: 50px;
+border-radius: 50%;
+object-fit: cover;
+
 }
 
 /* .chngizimgdiv {

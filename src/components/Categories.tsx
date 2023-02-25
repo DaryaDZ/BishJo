@@ -1,8 +1,10 @@
 import React from "react";
 import { ShowAllCourse } from "../features/Bishjo/CourseSlice";
+// import { showAllMaster } from "../features/Bishjo/MasterSlice";
+
 import { useSelector } from "react-redux";
-import video1 from "../Assets/Video1.png";
-import { positions } from "@mui/system/Box";
+// import video1 from "../Assets/Video1.png";
+// import { positions } from "@mui/system/Box";
 import box from "../Assets/BOX.png";
 
 import "./Categories.css";
@@ -59,7 +61,8 @@ function Categories() {
                   marginBottom: "10px",
                   // marginTop: "10px",
                 }}
-                src={require(`../Assets/${item.picture}`)}
+                  src={require(`../Assets/${item.picture}`)}
+                  alt=""
               />
               <div>
                 <div className="mapsname">
@@ -80,11 +83,19 @@ function Categories() {
                       marginTop: "20px",
                     }}
                   >
-                    <div className="mastersNAME">
-                      {item.mastersName}
-                    </div>
+                        {AllCourse.payload.masters.Masters.map((obj: any) => {
+                          return <>
+                            {obj.id === item.masterID ?
+                             <div className="mastersNAME">
+                              {obj.Name}
+                             </div>:""
+                          }
+                           
+                          </>
+                  
+                      })}
                     <div className="boxICON">
-                      <img className="ICONBOX" src={box} />
+                      <img className="ICONBOX" src={box} alt="" />
                     </div>
                   </div>
                 </div>

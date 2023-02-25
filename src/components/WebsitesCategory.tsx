@@ -1,9 +1,9 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import './WebsitesCategory.css';
-import Categories from './Categories';
-import {ShowAllCourse} from '../features/Bishjo/CourseSlice';
-import { useSelector } from 'react-redux';
+// import Categories from './Categories';
+// import {ShowAllCourse} from '../features/Bishjo/CourseSlice';
+// import { useSelector } from 'react-redux';
 import Sidebar from './Sidebar'
 
 

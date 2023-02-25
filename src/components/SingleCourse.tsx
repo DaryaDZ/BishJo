@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+// import React,{useState} from "react";
+import {  useParams } from "react-router-dom";
 import YourPointOfView from "./YourPointOfView";
 import Frame from "../Assets/Frame49.png";
 import check from "../Assets/check.png";
@@ -7,27 +7,39 @@ import folder from "../Assets/ICONS/folder.png";
 import timer from "../Assets/ICONS/timer.png";
 import visibility from "../Assets/ICONS/visibility.png";
 import star from "../Assets/star.png";
-import Changiz from "../Assets/Teachers/Changiz.png";
+// import Changiz from "../Assets/Teachers/Changiz.png";
 import { ShowAllCourse } from "../features/Bishjo/CourseSlice";
 // import blendersvideo from "../Assets/blendersvideo.mp4";
 
 import { useSelector } from "react-redux";
 import "./SingleCourse.css";
+// import MasterLogin from "./MasterLogin";
 
 
 function SingleCourse() {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   const AllCourse = useSelector(ShowAllCourse);
+  // console.log(AllCourse.payload.courses.courses);
+  const x = AllCourse.payload.courses.courses.filter((item: any) => item.id == id);
 
+  //  console.log(x)
+  const master = x.map((item: any) => {
+  return AllCourse.payload.masters.Masters.find((e:any)=> item.masterID == e.id)
+  })
+  console.log(master)
+
+  const movie = x.map((item: any) => {
+    return AllCourse.payload.movies.movies.find((e:any)=>item.id == e.courseId)
+  })
+console.log(movie)
   return (
     <div className="SingleCourse">
-      {/* {AllCourse.payload.courses.courses.map((item: any) => {
-        return ( */}
+  
       <div className="singlecouse1">
         <div>
-          <img src={Frame} className="Frameimg" />
+          <img src={Frame} className="Frameimg" alt="" />
         </div>
         <div className="txtFrame">
           <div className="txtFrame1">قراره توی این دوره چی یاد بگیریم!</div>
@@ -37,27 +49,27 @@ function SingleCourse() {
                 <div className="txtFrame6">اصل اولیه طراحی سه بعدی</div>
                 <div>
                   {" "}
-                  <img src={check} />{" "}
+                  <img src={check} alt=""/>{" "}
                 </div>
               </div>
               <div className="txtFrame4">
                 <div className="txtFrame6">معرفی تنظیمات برنامه</div>
                 <div>
-                  <img src={check} />
+                  <img src={check}alt="" />
                 </div>
               </div>
               <div className="txtFrame4">
                 <div className="txtFrame6">آشنایی با محیط برنامه</div>
                 <div>
                   {" "}
-                  <img src={check} />{" "}
+                  <img src={check}alt="" />{" "}
                 </div>
               </div>
               <div className="txtFrame4">
                 <div className="txtFrame6">مدل سازی</div>
                 <div>
                   {" "}
-                  <img src={check} />{" "}
+                  <img src={check}alt="" />{" "}
                 </div>
               </div>
             </div>
@@ -66,21 +78,21 @@ function SingleCourse() {
               <div className="txtFrame7">
                 <div className="txtFrame8">تکچر سازی </div>
                 <div>
-                  <img src={check} />
+                  <img src={check}alt="" />
                 </div>
               </div>
 
               <div className="txtFrame7">
                 <div className="txtFrame8">انیمیشن سازی </div>
                 <div>
-                  <img src={check} />
+                  <img src={check} alt=""/>
                 </div>
               </div>
 
               <div className="txtFrame7">
                 <div className="txtFrame8">Render / خروجی گرفتن </div>
                 <div>
-                  <img src={check} />
+                  <img src={check}alt="" />
                 </div>
               </div>
             </div>
@@ -95,7 +107,7 @@ function SingleCourse() {
             <div className="CNT1" >
               <div className="iconandstuff1">
                 <div className="imgICN" >
-                  <img  src={visibility} />
+                  <img  src={visibility} alt=""/>
                 </div>
                 <div className="txt60">
                 تعداد بازدید :
@@ -107,7 +119,7 @@ function SingleCourse() {
 
               <div className="iconandstuff2">
               <div className="imgICN">
-              <img src={timer} />
+              <img src={timer} alt=""/>
               </div>
               <div className="txt60" >
               مدت زمان :
@@ -119,7 +131,7 @@ function SingleCourse() {
 
               <div className="iconandstuff3">
               <div className="imgICN">
-              <img src={folder} />
+              <img src={folder} alt=""/>
               </div>
               <div className="txt60" >
               تعداد فایل ها :
@@ -131,30 +143,53 @@ function SingleCourse() {
 
 
             </div>
-            <div className="CNT2" >
+
+
+          {/* {
+            AllCourse.payload.masters.Masters
+          } */}
+          {master.map((item: any) => {
+            return <>
+              <div className="CNT2" >
               <div className="chngizz">
                 <div className="chngizimgdiv">
-                <img className="chngizimg" src={Changiz} />
+                <img className="chngizimg" src={require(`../Assets/Teachers/${item.imgMaster}`)} alt=""/>
                 </div>
-                <label className="labelchngiz" >چنگیز مرادی
-                {/* {item.mastersName} */}
-                </label>
+                <label className="labelchngiz" >
+                {item.Name}
+                  </label>
                 <button className="Changizsbtn" >مشاهده رزومه</button>
               </div>
               <div className="changiztxt">
-                <label className="chnigztxt" >بنده از سال 1388 در حوزه طراحی 3 بعدی فعالیت داشتم و موفق شدم در شرکت بازی سازی
-تشتک سازان تبریز، مدل سازی کنم</label>
+                  <label className="chnigztxt" >
+                    {item.about}
+                </label>
               </div>
-                            </div>
+          </div>
+            
+            
+            </>
+})}
+          
+          
+
+
+
+
           </div>
           <div className="FRAMEcontainer2">
-             <video
+          {movie.map((item: any) => {
+            return <>
+            
+            <video
                className="movieTrailer" controls 
               //  poster={playMovie.trailersPoster}
-              
+              src={require(`../Assets/${item.video}`)}
                 > 
-                <source src='../Assets/blendersvideo.mp4' type="video/mp4"/>
+                {/* <source src= type="video/mp4"/> */}
             </video>
+            </>
+            })}
           </div>
 
 
@@ -208,7 +243,7 @@ function SingleCourse() {
                   <div className="LEFTcontainer">
                     <div className="ratetxt" >۵.۰</div>
                     <div className="lefticon">
-                    <img style={{height: "10px", width: "10px"}} src={star} />
+                    <img style={{height: "10px", width: "10px"}} src={star} alt="" />
                     </div>
                   </div>
                 </div>
@@ -245,8 +280,7 @@ function SingleCourse() {
 
 
 
-      {id}
-        // {/* )} */}
+
     </div>
   );
 }

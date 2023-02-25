@@ -6,26 +6,19 @@ const { v4: uuidv4 } = require('uuid');
 
 
 interface MasterState {
-  Masters: [
-    {
-      id: number;
-      Name: string | null;
-      username: string;
-      phoneNumber: string;
-      imgMaster: string | null;
-      intro: string | null;
-      followers: string | null;
-      courseCount: string | null;
-      field: string | null;
-      courses: {
-        courseId: number;
-        courseName: string;
-        trailer: string | null;
-        catergory: string;
-     
-      }[] | null;
-    }
-  ];
+  Masters: 
+  {
+    id: number;
+    Name: string | null;
+    username: string;
+    phoneNumber: string;
+    imgMaster: string | null;
+    intro: string | null;
+    followers: string | null;
+    courseCount: string | null;
+    field: string | null;
+    about: string|null;
+  }[],
   CurrentMaster: {
     id: number;
     Name: string|null;
@@ -35,52 +28,43 @@ interface MasterState {
     intro: string | null;
     followers: string | null;
     courseCount: string | null;
-    field: string |null;
-    courses: [{
-      courseId: number;
-      courseName: string;
-      trailer: string | null;
-      catergory: string;
-    }] |null
+    field: string | null;
+    about: string|null;
+
   } | null;
 }
 const initialState: MasterState = {
   Masters: [
     {
-      id:1,
-      Name: "حشمت مشتاق",
+      id: 1,
+      Name: "چنگیز مرادی",
       username: "HM",
       phoneNumber: "09123333333",
       imgMaster: "Teachers1.png",
       intro: "براي همه كساني كه به طراحي و مدل سازي براي يك محصول علاقه دارند ، توجه داشته باشيد كه ابزار هاي نرم افزار هاي گرافيكي نيازبه سخت افزار هاي قوي براي اجرا دارند .",
       followers: "200",
-      courseCount:"50",
+      courseCount: "50",
       field: "طراح گرافیک",
-      courses: [
-       { courseId: uuidv4(),
-          courseName: "آموزش مقدماتي تا پيشرفته نرم افزار Adobe Photoshop",
-          trailer: "https://hw19.cdn.asset.aparat.com/aparat-video/4309a08d38f724c55f11606848e81bb613949011-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjI3OTYwNDMwNGU1MzQwZDc0OWQ5NDY5MWEyZWU1YmZhIiwiZXhwIjoxNjc2NzIwNTEwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.kbqWUTmF6ueFGEupuO3tgkf9HSygFnLOCrT8XZsuRtw",
-          catergory: "فتوشاپ"
-          
-        },
-        {
-          courseId :uuidv4(),
-          courseName: "آموزش مقدماتي نرم افزار Adobe Illustartor",
-          trailer: "https://hw17.cdn.asset.aparat.com/aparat-video/441c25474fd126f5639c48d2a6aaf8fb11680807-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjY4NTNjYTlhZDJmNjY0NWMwYzBmYmVjMGYzODEyNjg4IiwiZXhwIjoxNjc2NzIwNTkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.QjCElhqoVqNbeCokkRqcsDEEPGDvl1mNErHdalt4JoI",
-          catergory: "ایلاستریتور"
-        },{
-          courseId :uuidv4(),
-          courseName: "آموزش پيشرفته  نرم افزار Adobe Illustartor",
-          trailer: "https://aspb12.cdn.asset.aparat.com/aparat-video/027218fe4f87149b985f296e785d4c3c14510687-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImUxMDhlODU5NDMxNjI1YTVjMGI3ZTViOGRhY2Q2NDVkIiwiZXhwIjoxNjc2NzIwNjMyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.PV-VSA6uOfJvmYzylXMBtoXp3nOLJjNkAVcxUnkyess",
-          catergory: "ایلاستریتور"
-        },
-
-      ]
+      about:"بنده از سال 1388 در حوزه طراحی گرافيك فعالیت داشتم و موفق شدم در شرکت طراحي گرافيك تشتک سازان تهران طراحي گرافيك  بپردازم "
+      
     },
-  ],
-  CurrentMaster: null,
-};
 
+    {
+      id: 2,
+      Name: "سکینه جعفری",
+      username: "SJ",
+      phoneNumber: "09122222222",
+      imgMaster: "Teachers2.png",
+      intro: "براي همه كساني كه به طراحي و مدل سازي براي يك محصول علاقه دارند ، توجه داشته باشيد كه ابزار هاي نرم افزار هاي گرافيكي نيازبه سخت افزار هاي قوي براي اجرا دارند .",
+      followers: "200",
+      courseCount: "50",
+      field: "مدل سازی",
+      about:"بنده از سال 1398 در حوزه طراحی 3 بعدی فعالیت داشتم و موفق شدم در شرکت بازی سازی تشتک سازان تبریز، مدل سازی کنم"
+      
+    }
+  ],
+  CurrentMaster: null
+} 
 export const MastersSlice = createSlice({
   name: "masters",
   initialState,
@@ -95,8 +79,8 @@ export const MastersSlice = createSlice({
         intro: null,
         followers: null,
         courseCount: null,
-        field: null,
-        courses: null
+        field: null, 
+        about:null
       });
       console.log(action.payload)
     },
@@ -113,12 +97,17 @@ export const MastersSlice = createSlice({
         // console.log(state.CurrentMaster)
       }
     },
-    editMaster: (state, action) => {
+    showAllMaster: (state) => {
+      state.Masters.map((item: any) => {
+        return item
+      })
+    },
+    // editMaster: (state, action) => {
       
-    }
+    // }
   }
 
 });
-export const { signUpMaster,loginMaster } = MastersSlice.actions;
+export const { signUpMaster,loginMaster,showAllMaster } = MastersSlice.actions;
 
 export default MastersSlice.reducer;
