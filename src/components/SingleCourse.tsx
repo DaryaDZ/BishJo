@@ -9,6 +9,8 @@ import visibility from "../Assets/ICONS/visibility.png";
 import star from "../Assets/star.png";
 // import Changiz from "../Assets/Teachers/Changiz.png";
 import { ShowAllCourse } from "../features/Bishjo/CourseSlice";
+// import { ShowAllMasters } from "../features/Bishjo/";
+
 // import blendersvideo from "../Assets/blendersvideo.mp4";
 
 import { useSelector } from "react-redux";
@@ -23,6 +25,8 @@ function SingleCourse() {
   const AllCourse = useSelector(ShowAllCourse);
   // console.log(AllCourse.payload.courses.courses);
   const x = AllCourse.payload.courses.courses.filter((item: any) => item.id == id);
+  // const Masters = useSelector(ShowAllMasters);
+
 
   //  console.log(x)
   const master = x.map((item: any) => {
@@ -36,7 +40,12 @@ function SingleCourse() {
 console.log(movie)
   return (
     <div className="SingleCourse">
+
   
+
+      {/* {AllCourse.payload.courses.courses.map((item: any) => {
+        return <> */}
+
       <div className="singlecouse1">
         <div>
           <img src={Frame} className="Frameimg" alt="" />
@@ -280,6 +289,12 @@ console.log(movie)
 
 
 
+
+
+
+      {/* </> */}
+      {/* // })
+    } */}
 
     </div>
   );

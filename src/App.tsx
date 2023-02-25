@@ -29,6 +29,7 @@ import Categories from './components/Categories';
 import SingleCourse from './components/SingleCourse';
 import UserProfile from './components/UserProfile';
 import MasterProfile from './components/MasterProfile';
+import BookStore from './components/BookStore';
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
           <Route path='apply' element={<Apply />} />
           <Route path="support" element={ <Support />} />
           <Route path="questions" element={<Questions />} />
+          <Route path='bookstore' element={<BookStore />} />
+
 
           <Route path="/category" element={<WebsitesCategory />} >
           <Route path="design" element={<Design />} />
