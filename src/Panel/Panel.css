@@ -15,3 +15,66 @@ top: 362px;
 background: #287DF8;
 border-radius: 42px;
 }
+
+.Content1 {
+  position: absolute;
+  width: 450px;
+  height: 307.5px;
+left: 620px;
+top: 141px;
+background: #E9F2FB;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+}
+
+.Content2 {
+  position: absolute;
+  width: 450px;
+  height: 307.5px;
+left: 130px;
+top: 141px;
+background: #E9F2FB;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+}
+
+.Content3 {
+  position: absolute;
+  width: 450px;
+  height: 307.5px;
+left: 624px;
+top: 489px;
+background: #E9F2FB;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+}
+
+.Content4 {
+  position: absolute;
+width: 450px;
+height: 307.5px;
+left: 130px;
+top: 488.5px;
+background: #E9F2FB;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+}
+
+.ContentTxt {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 250px;
+height: 29px;
+left: 120px;
+top: 145px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+text-align: right;
+color: #000000;
+
+}

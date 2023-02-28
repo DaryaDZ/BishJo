@@ -35,6 +35,7 @@ import DashBoard from './Panel/DashBoard';
 import MAsterProfileHomePage from './components/MAsterProfileHomePage';
 import Blogs from './components/Blogs';
 import SingleBlog from './components/SingleBlog';
+import Contents from './Panel/Contents';
 
 
 
@@ -90,6 +91,7 @@ function App() {
             </Route>   
 
             <Route path='/panel' element={<PanelsLayout /> } >
+              <Route path='content' element={<Contents />} />
               <Route index element={<DashBoard /> } />
             </Route>
                       

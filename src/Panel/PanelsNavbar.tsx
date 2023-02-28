@@ -16,7 +16,9 @@ function PanelsNavbar() {
         <Link to='/panel' >
         <div style={{marginRight: "50px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}} >داشبورد</div>
         </Link>
+        <Link to='content' >
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>محتوای سایت</div>
+        </Link>
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>اساتید</div>
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>پیام کاربران</div>
       </div>
