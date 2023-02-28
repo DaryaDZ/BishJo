@@ -17,7 +17,7 @@ interface MasterState {
     followers: string | null;
     courseCount: string | null;
     field: string | null;
-    about: string|null;
+    about: string | null;
   }[],
   CurrentMaster: {
     id: number;

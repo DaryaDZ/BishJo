@@ -51,8 +51,22 @@ function Categories() {
                 borderRadius: "2px",
 
               }}
-            >
-              <img
+              >
+                {
+                  item.picture !== null ?
+                  <img
+                  style={{
+                    backgroundColor: "1F2533",
+                    width: "280px",
+                    position: "sticky",
+                    borderRadius: "8px",
+                    marginBottom: "10px",
+                    // marginTop: "10px",
+                  }}
+                    src={require(`../Assets/${item.picture}`)}
+                    alt=""
+                    
+                /> :   <img
                 style={{
                   backgroundColor: "1F2533",
                   width: "280px",
@@ -61,9 +75,12 @@ function Categories() {
                   marginBottom: "10px",
                   // marginTop: "10px",
                 }}
-                  src={require(`../Assets/${item.picture}`)}
+                  src={require(`../Assets/BrofileBack2.jpg`)}
                   alt=""
+                  
               />
+    }
+           
               <div>
                 <div className="mapsname">
                   <div>

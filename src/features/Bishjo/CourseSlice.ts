@@ -9,7 +9,7 @@ interface courses {
 
   name: string,
   masterID: number,
-  price : string,
+  price : string|null,
   tag: string,
   time: string,
   category: string,
@@ -24,6 +24,7 @@ interface courses {
   // phone: string,
   // password:string,
 }
+const { v4: uuidv4 } = require("uuid");
 
 const initialState: CourseState={
   courses:[{
@@ -118,7 +119,7 @@ const initialState: CourseState={
  
   },
   {
-    name:" آموزش ایلاستریتور  -  ابزار اصلاح کردن تصاویر ",
+    name:" آموزش ایلاستریتور  -  اصلاح کردن تصاویر ",
     masterID:1,
     price: "۲۰۰۰",
     time: " ‌۵ ساعت",
@@ -143,24 +144,29 @@ export const CourseSlice = createSlice({
      {return item.name}
      
      )
-    }
-    // signupUser: (state, action) => {
-    //   state.courses.push({
-
-
-    //     username: action.payload.username,
-    //     email: action.payload.email,
-    //     phone: action.payload.phone,
-    //     password:action.payload.password
-    //   })
-      // console.log(action.payload)
-      
-    // }
+    },
+    AddCourse: (state, action) => {
+      state.courses.push({
+        name: action.payload.name,
+        masterID: action.payload.masterID,
+        price : null,
+        tag: action.payload.tag,
+        time: action.payload.time,
+        category: action.payload.category,
+        // picture:action.payload.picture,
+        picture: null,
+        information: action.payload.information,
+        rate: null,
+        id:action.payload.id,
+      })
+      console.log(action.payload)
+    },
   }
+ 
 
 })
 
 // Action creators are generated for each case reducer function
-export const {ShowAllCourse} = CourseSlice.actions
+export const {ShowAllCourse,AddCourse} = CourseSlice.actions
 
 export default CourseSlice.reducer

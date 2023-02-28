@@ -28,10 +28,15 @@ import Design from './components/Design';
 import Categories from './components/Categories';
 import SingleCourse from './components/SingleCourse';
 import UserProfile from './components/UserProfile';
-import MasterProfile from './components/MasterProfile';
+import MasterPro from './components/MasterPro';
 import BookStore from './components/BookStore';
 import PanelsLayout from './Panel/PanelsLayout';
 import DashBoard from './Panel/DashBoard';
+import MAsterProfileHomePage from './components/MAsterProfileHomePage';
+import Blogs from './components/Blogs';
+import SingleBlog from './components/SingleBlog';
+
+
 
 function App() {
   return (
@@ -67,8 +72,12 @@ function App() {
           <Route path='aboutus' element={<AboutBishjo />} />
           <Route path='select' element={<Select />} />
           <Route path='pointofview' element={<YourPointOfView />} />
+
+          <Route path='profilemaster/:id' element={<MAsterProfileHomePage />} />
+          <Route path='blogs' element={<Blogs />} />
+          <Route path='singleblog/:id' element={<SingleBlog />} />
         </Route>
-        <Route path="masterprofile" element={<MasterProfile />}></Route>
+        <Route path="masterprofile" element={<MasterPro/>}></Route>
         <Route path="userprofile" element={<UserProfile />} />
 
         <Route path='/sinupslayout' element={<SignupLayout />} >            
@@ -81,7 +90,7 @@ function App() {
             </Route>   
 
             <Route path='/panel' element={<PanelsLayout /> } >
-              <Route path='dashboard' element={<DashBoard /> } />
+              <Route index element={<DashBoard /> } />
             </Route>
                       
 

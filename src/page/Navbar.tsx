@@ -268,11 +268,13 @@ const Navbar = () => {
 
         {/* Menu */}
         <div style={ChildDiv}>
-          <Link to="./bookstore" >
+          <Link to="/bookstore" >
           <Button sx={MenuBtn}> کتابخانه</Button>
           </Link>
-          <Button sx={MenuBtn}>وبلاگ</Button>
-          <Link to='./category' >
+          <Link to="/blogs" >
+            <Button sx={MenuBtn}>وبلاگ</Button>
+            </Link>
+          <Link to='/category' >
           <Button sx={MenuBtn}>دوره ها </Button>
           </Link>
         </div>

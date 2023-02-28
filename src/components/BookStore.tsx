@@ -8,22 +8,22 @@ import CTA from "../Assets/CTA.png"
 
 
 
-import { ShowAllCourse } from "../features/Bishjo/CourseSlice"
+// import { ShowAllCourse } from "../features/Bishjo/CourseSlice"
 import { ShowAllBooks } from "../features/Bishjo/BooksSlice"
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import "./BookStore.css";
 
 function BookStore() {
-  const ChildDiv = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
+  // const ChildDiv = {
+  //   display: "flex",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  // };
 
   
   const { id } = useParams();
@@ -104,7 +104,8 @@ console.log(AllBooks.payload.books.books)
                 height: "200px",
                 margin: "20px",
               }} 
-              src={require(`../Assets/Books/${item.picture}`)} />
+                      src={require(`../Assets/Books/${item.picture}`)}
+              alt=""      />
             </div>
 
             <div>            
@@ -137,7 +138,9 @@ console.log(AllBooks.payload.books.books)
                     marginLeft: "5px",
 
                   }}
-                  src={favorite} />
+                            src={favorite}
+                            alt=""  />
+                          
                 </div>
                 <div style={{
                   marginLeft: "10px",
@@ -154,7 +157,7 @@ console.log(AllBooks.payload.books.books)
                   marginTop: "2px",
                 }} >
                 <img 
-                 src={Star} />
+                 src={Star} alt=""  />
                 </div>
 
               </div>
@@ -178,7 +181,7 @@ console.log(AllBooks.payload.books.books)
           <div style={{display: "flex",}}>
           <div style={{justifyContent: "center", alignItems: "center",
            }}>
-            <img src={sell} style={{width: "15px", height: "15px"}} />
+            <img src={sell} style={{width: "15px", height: "15px"}}  alt=""  />
           </div>
           <div style={{color: "#EAF0FF",fontSize: "12px", marginRight: "5px"}}>کیفیت کاری</div>
           </div>
@@ -188,7 +191,7 @@ console.log(AllBooks.payload.books.books)
             مشاهده و دانلود
             </div>
             <div >
-              <img style={{width: "20px", height: "20px"}} src={CTA}  />
+              <img style={{width: "20px", height: "20px"}} src={CTA} alt=""   />
             </div>
           </div>
 

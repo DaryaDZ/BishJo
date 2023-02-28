@@ -8,7 +8,7 @@ interface MovieType{
     courseId: number;
     masterId: number;
     video: string;
-    category: string;
+    category: string|null;
   }[]
   
 };
@@ -70,7 +70,14 @@ export const MovieSlice = createSlice({
   initialState,
   reducers: {
     addMovie: (state, action) => {
-      
+      state.movies.push({
+        movieId:uuidv4(),
+        courseId: action.payload.courseId,
+        masterId: action.payload.masterId,
+        video: action.payload.video,
+        category:action.payload.category
+      })
+      console.log(action.payload)
 }
   }
 })

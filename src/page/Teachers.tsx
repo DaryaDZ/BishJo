@@ -3,7 +3,9 @@ import { Box ,Typography} from "@mui/material";
 import Teachers1 from '../Assets/Teachers/Teachers1.png';
 import Teachers2 from '../Assets/Teachers/Teachers2.png';
 import Teachers3 from '../Assets/Teachers/Teachers3.png';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { showAllMaster } from '../features/Bishjo/MasterSlice';
+import { useSelector } from 'react-redux';
 const img = [
   // {
   //   img: Teachers1,
@@ -25,7 +27,6 @@ const img = [
 ]
 
 
-
 const Teachers = () => {
   const boxStyle = {
     display: "flex",
@@ -36,8 +37,10 @@ const Teachers = () => {
     marginTop: "180px",
  
   };
-
-
+  const AllMaster:any = useSelector<undefined>(showAllMaster);
+  console.log(AllMaster.payload.masters.Masters)
+  
+// const mastersINFO=
 
   return (
     <Box sx={boxStyle}>
@@ -69,20 +72,20 @@ const Teachers = () => {
       </Box>
 
       <Box sx={{  display: "flex", alignItems: "center", justifyContent:"space-between", marginBottom:"50px", }}>
-        {
-          img.map((item) => {
+         {
+          AllMaster.payload.masters.Masters.map((item:any) => {
             return (
               <Box sx={{margin:"20px"}}>
-              <img src={item.img} alt="" className='teacherImg' />
+              <img src={require(`../Assets/Teachers/${item.imgMaster}`)} alt="" className='teacherImg' />
               <div className="blurTeacher">
-                <Link to="/" className="linkstyle">
-                 {item.name}
+                <Link to={`profilemaster/${item.id}`} className="linkstyle">
+                 {item.Name}
                 </Link>
               </div>
      </Box>
             )
           })
-        }
+        } 
        
 </Box>
     </Box>

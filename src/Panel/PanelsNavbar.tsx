@@ -13,7 +13,7 @@ function PanelsNavbar() {
     //  marginTop: "20px",
      alignItems: "right"}}>
       <div style={{display: "flex"}}>
-        <Link to='dashboard' >
+        <Link to='/panel' >
         <div style={{marginRight: "50px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}} >داشبورد</div>
         </Link>
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>محتوای سایت</div>
@@ -28,10 +28,10 @@ function PanelsNavbar() {
      direction: "ltr"
      }} >
       <div style={{marginLeft: "50px"}} >
-        <img style={{width: "100px", height: "30px"}} src={LogoFooter} />
+        <img style={{width: "100px", height: "30px"}} src={LogoFooter} alt="" />
       </div>
       <div>
-      <img style={{width: "35px", height: "30px", marginLeft: "10px",justifyContent:"center" , alignItems: "center"}}  src={Mail} />
+      <img alt="" style={{width: "35px", height: "30px", marginLeft: "10px",justifyContent:"center" , alignItems: "center"}}  src={Mail} />
       </div>
 
     </div>
