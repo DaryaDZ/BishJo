@@ -78,3 +78,38 @@ font-size: 14px;
 line-height: 120%;
 color: #FFFFFF;
  }
+
+ .yellowdiv {
+  width: 106px;
+height: 46px;
+left: 974px;
+top: 640px;
+background: #FFF9EB;
+box-sizing: border-box;
+border: 1px solid #FDBE34;
+border-radius: 16px;
+direction: rtl;
+justify-content: center;
+align-items: center;
+display: flex;
+margin: 10px;
+/* margin-right: 10px; */
+ }
+
+ .Reddiv {
+  width: 106px;
+height: 46px;
+left: 855px;
+top: 640px;
+background: #FFECEC;
+border: 1px solid #DF4A4A;
+border-radius: 16px;
+box-sizing: border-box;
+direction: rtl;
+justify-content: center;
+align-items: center;
+display: flex;
+margin: 10px;
+/* margin-right: 10px; */
+
+ }

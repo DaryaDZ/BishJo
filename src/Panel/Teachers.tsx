@@ -9,6 +9,13 @@ import Teacher4 from "../Assets/Profile/Teacher4.png";
 import Teacher5 from "../Assets/Profile/Teacher5.png";
 import Teacher6 from "../Assets/Profile/Teacher6.png";
 import Line6 from "../Assets/Line6.png";
+import BigProfile1 from "../Assets/Profile/BigProfile1.png";
+import BigProfile2 from "../Assets/Profile/BigProfile2.png";
+import BigProfile3 from "../Assets/Profile/BigProfile3.png";
+import BigProfile4 from "../Assets/Profile/BigProfile4.png";
+import BigProfile5 from "../Assets/Profile/BigProfile5.png";
+import warning from "../Assets/warning.png";
+import cancel from "../Assets/cancel.png";
 
 function Teachers() {
   const editorRef = useRef(null);
@@ -91,6 +98,60 @@ function Teachers() {
       </div>
       <img src={Line6} />
 
+      </div>
+      <div>
+        <div style={{display: "flex"}}>
+
+          <div>
+            <img src={BigProfile1} style={{width:"250px", height: "200px"}} />
+          </div>
+          <div>
+          <img src={BigProfile2}  style={{width:"250px", height: "200px"}} />
+          </div>
+          <div>
+          <img src={BigProfile3}  style={{width:"250px", height: "160px"}} />
+          </div>
+          <div>
+          <img src={BigProfile4}  style={{width:"250px", height: "160px"}} />
+          </div>
+
+        </div>
+        <div style={{display: "flex"}}>
+      
+          <div className='yellowdiv' >
+            <img src={warning} />
+            اخطار
+          </div>
+          <div className='Reddiv'>
+          <img src={cancel} />
+          مسدود
+          </div>
+          <div className='yellowdiv' >
+            <img src={warning} />
+            اخطار
+          </div>
+          <div className='Reddiv'>
+          <img src={cancel} />
+          مسدود
+          </div><div className='yellowdiv' >
+            <img src={warning} />
+            اخطار
+          </div>
+          <div className='Reddiv'>
+          <img src={cancel} />
+          مسدود
+          </div>
+          <div className='yellowdiv' >
+            <img src={warning} />
+            اخطار
+          </div>
+          <div className='Reddiv'>
+          <img src={cancel} />
+          مسدود
+          </div>
+          
+
+        </div>
       </div>
     </div>
   )
