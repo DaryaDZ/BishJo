@@ -17,3 +17,43 @@ background: #F5FAFF;
 box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
 border-radius: 8px;
  }
+
+ .profilebottom {
+  width: 348px;
+height: 56px;
+left: 692px;
+top: 364px;
+background: #A4C2DD;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+position: sticky;
+justify-content: center;
+align-items: center;
+display: flex;
+ }
+
+ .ProfilesSubmitBtn {
+  display: flex;
+justify-content: center;
+align-items: center;
+padding: 9px 12px;
+gap: 10px;
+width: 54px;
+height: 37px;
+left: 167px;
+top: 9px;
+background: #6078CD;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+color: #FFFFFF;
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+ }
+
+ .Profileimg {
+  width: 90px;
+  height: 90px;
+ }
