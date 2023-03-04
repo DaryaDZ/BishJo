@@ -58,3 +58,23 @@ font-size: 14px;
   height: 95px;
   padding: 1px;
  }
+
+ .submitbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 57px;
+height: 32px;
+left: 20px;
+top: 12px;
+background: #6078CD;
+border-radius: 4px;
+border: none;
+font-family: 'Vazirmatn';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+color: #FFFFFF;
+ }

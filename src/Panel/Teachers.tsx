@@ -8,8 +8,7 @@ import Teacher3 from "../Assets/Profile/Teacher3.png";
 import Teacher4 from "../Assets/Profile/Teacher4.png";
 import Teacher5 from "../Assets/Profile/Teacher5.png";
 import Teacher6 from "../Assets/Profile/Teacher6.png";
-
-
+import Line6 from "../Assets/Line6.png";
 
 function Teachers() {
   const editorRef = useRef(null);
@@ -84,31 +83,13 @@ function Teachers() {
            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px,backgroundColor:" blue" }'
          }}
        />
+       <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "4px"}}>
+        <button className='submitbtn' >ثبت </button>
+       </div>
 
         </div>
       </div>
-      
-      {/* <Editor
-        //  onInit={(evt, editor) => editorRef.current = editor}
-         initialValue="<p>This is the initial content of the editor.</p>"
-         
-         init={{
-           height: 200,
-           width: 500,
-           menubar: false,
-           plugins: [
-             'advlist autolink lists link image charmap print preview anchor',
-             'searchreplace visualblocks code fullscreen',
-             'insertdatetime media table paste code help wordcount'
-           ],
-           toolbar: 'undo redo | formatselect | ' +
-           'bold italic backcolor | alignleft aligncenter ' +
-           'alignright alignjustify | bullist numlist outdent indent | ' +
-           'removeformat | help',
-           content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-         }}
-       />
-       <button onClick={log}>Log editor content</button> */}
+      <img src={Line6} />
 
       </div>
     </div>
