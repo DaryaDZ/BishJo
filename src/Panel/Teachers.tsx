@@ -1,6 +1,7 @@
-import React from 'react'
 import './Teachers.css'
 import { createSlice } from "@reduxjs/toolkit";
+import React, { useRef } from 'react';
+import { Editor } from '@tinymce/tinymce-react';
 import Teacher1 from "../Assets/Profile/Teacher1.png";
 import Teacher2 from "../Assets/Profile/Teacher2.png";
 import Teacher3 from "../Assets/Profile/Teacher3.png";
@@ -11,6 +12,12 @@ import Teacher6 from "../Assets/Profile/Teacher6.png";
 
 
 function Teachers() {
+  const editorRef = useRef(null);
+  const log = () => {
+    if (editorRef.current) {
+      // console.log(editorRef.current.getContent());
+    }
+  };
   return (
     <div>
       <div>
@@ -61,10 +68,53 @@ function Teachers() {
             </button>
           </div>
         </div>
-        <div className='textarea'>dsf</div>
+        <div className='textarea'>
+        <Editor
+        //  onInit={(evt, editor) => editorRef.current = editor}
+         initialValue="<p>This is the initial content of the editor.</p>"
+         
+         init={{
+           height: 200,
+           width: 500,
+           menubar: false,
+           plugins: [
+             'advlist autolink lists link image charmap print preview anchor',
+             'searchreplace visualblocks code fullscreen',
+             'insertdatetime media table paste code help wordcount'
+           ],
+           toolbar: 'undo redo | formatselect | ' +
+           'bold italic backcolor | alignleft aligncenter ' +
+           'alignright alignjustify | bullist numlist outdent indent | ' +
+           'removeformat | help',
+           content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+         }}
+       />
+       <button onClick={log}>Log editor content</button>
+
+        </div>
       </div>
       
-      
+      {/* <Editor
+        //  onInit={(evt, editor) => editorRef.current = editor}
+         initialValue="<p>This is the initial content of the editor.</p>"
+         
+         init={{
+           height: 200,
+           width: 500,
+           menubar: false,
+           plugins: [
+             'advlist autolink lists link image charmap print preview anchor',
+             'searchreplace visualblocks code fullscreen',
+             'insertdatetime media table paste code help wordcount'
+           ],
+           toolbar: 'undo redo | formatselect | ' +
+           'bold italic backcolor | alignleft aligncenter ' +
+           'alignright alignjustify | bullist numlist outdent indent | ' +
+           'removeformat | help',
+           content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+         }}
+       />
+       <button onClick={log}>Log editor content</button> */}
 
       </div>
     </div>
