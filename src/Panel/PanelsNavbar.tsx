@@ -19,7 +19,9 @@ function PanelsNavbar() {
         <Link to='content' >
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>محتوای سایت</div>
         </Link>
+        <Link to='teachers' >
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>اساتید</div>
+        </Link>
         <div style={{marginRight: "20px", fontWeight: "400px", fontSize: "16px",cursor: "pointer", color: "#000000"}}>پیام کاربران</div>
       </div>
     </div>

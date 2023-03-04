@@ -1,0 +1,19 @@
+ .profilesContainer {
+width: 348px;
+height: 270px;
+left: 692px;
+top: 140px;
+background: #E9F2FB;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+margin-right: 28px;
+ }
+ .textarea {
+  width: 532px;
+height: 260px;
+left: 130px;
+top: 150px;
+background: #F5FAFF;
+box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
+border-radius: 8px;
+ }

@@ -25,6 +25,8 @@ top: 141px;
 background: #E9F2FB;
 box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
 border-radius: 8px;
+margin-top: 20px;
+
 }
 
 .Content2 {
@@ -36,6 +38,8 @@ top: 141px;
 background: #E9F2FB;
 box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
 border-radius: 8px;
+margin-top: 20px;
+
 }
 
 .Content3 {
@@ -47,6 +51,8 @@ top: 489px;
 background: #E9F2FB;
 box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
 border-radius: 8px;
+margin-top: 20px;
+
 }
 
 .Content4 {
@@ -58,6 +64,8 @@ top: 488.5px;
 background: #E9F2FB;
 box-shadow: 5.23636px 5.23636px 5.23636px rgba(86, 144, 198, 0.11), 10.4727px 10.4727px 52.3636px rgba(125, 153, 180, 0.2);
 border-radius: 8px;
+margin-top: 20px;
+
 }
 
 .ContentTxt {
@@ -77,4 +85,40 @@ line-height: 29px;
 text-align: right;
 color: #000000;
 
+}
+
+.panelssidebarOpened {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 24px 16px;
+  gap: 54px;
+  
+  position: absolute;
+  width: 70px;
+  height: 220px;
+  right: 80px;
+  top: 362px;
+  
+  background: #287DF8;
+  border-radius: 42px;
+}
+
+.openedButton {
+  width: 210px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 24px 16px;
+  gap: 54px;
+  
+  position: absolute;
+  right: 80px;
+  top: 362px;
+  
+  background: #287DF8;
+  border-radius: 42px;
 }

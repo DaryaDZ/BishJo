@@ -36,6 +36,7 @@ import MAsterProfileHomePage from './components/MAsterProfileHomePage';
 import Blogs from './components/Blogs';
 import SingleBlog from './components/SingleBlog';
 import Contents from './Panel/Contents';
+import Teachers from './Panel/Teachers';
 
 
 
@@ -92,6 +93,7 @@ function App() {
 
             <Route path='/panel' element={<PanelsLayout /> } >
               <Route path='content' element={<Contents />} />
+              <Route path='teachers' element={<Teachers />} />
               <Route index element={<DashBoard /> } />
             </Route>
                       

@@ -9,7 +9,22 @@ import Gp75 from "../Assets/ICONS/Gp75.png"
 import Group from "../Assets/ICONS/Group.png"
 import './Dashboard.css'
 
+import { PureComponent } from 'react';
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
+const data = [
+  { name: 'Group A', value: 200 },
+  { name: 'Group B', value: 100 },
+  { name: 'Group C', value: 100 },
+  { name: 'Group D', value: 100 },
+  { name: 'Group E', value: 50 },
+  { name: 'Group F', value: 100 },
+  { name: 'Group G', value: 50 },
+  { name: 'Group H', value: 100 },
+];
+
+// const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#FA696999', '#57FAFA99', '#ACB0BD99', '#B455FF99', '#3655C699', '#00FFA399', '#E3FA5799', '#FEBC5999' ]
 
 
 function DashBoard() {
@@ -90,8 +105,49 @@ function DashBoard() {
       </div>
 
       <div style={{backgroundColor: "#E9F2FB", width: "328px", height: "630px", marginRight: "30px", borderRadius: "8px"}}>
-        <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "4px"}}>
-          <img style={{display: "flex", justifyContent: "center", alignItems: "center", width: "342px", height: "300px"}} src={Group} />
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "210px"}}>
+
+         <PieChart width={250} height={400} 
+        //  onMouseEnter={this.onPieEnter}
+         >
+        <Pie
+          data={data}
+          cx={120}
+          cy={200}
+          innerRadius={40}
+          outerRadius={80}
+          fill="#8884d8"
+          dataKey="value"
+          // cx={100}
+          // cy={240}
+          // innerRadius={70}
+          // outerRadius={80}
+          // fill="#8884d8"
+          // paddingAngle={2}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Pie
+          data={data}
+          cx={420}
+          cy={100}
+          startAngle={180}
+          endAngle={0}
+          innerRadius={90}
+          outerRadius={80}
+          fill="#8884d8"
+          // paddingAngle={2}
+          dataKey="value"
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+      </PieChart>
+
+          {/* <img style={{display: "flex", justifyContent: "center", alignItems: "center", width: "342px", height: "300px"}} src={Group} /> */}
         </div>
         <div className='CategoryContainer'>
           <div style={{display: "flex", justifyContent: "space-between"}}>

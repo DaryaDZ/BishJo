@@ -18,6 +18,7 @@ interface MasterState {
     courseCount: string | null;
     field: string | null;
     about: string | null;
+    Profileimg: string | null;
   }[],
   CurrentMaster: {
     id: number;
@@ -30,6 +31,8 @@ interface MasterState {
     courseCount: string | null;
     field: string | null;
     about: string|null;
+    Profileimg: string | null;
+
 
   } | null;
 }
@@ -45,7 +48,8 @@ const initialState: MasterState = {
       followers: "200",
       courseCount: "50",
       field: "طراح گرافیک",
-      about:"بنده از سال 1388 در حوزه طراحی گرافيك فعالیت داشتم و موفق شدم در شرکت طراحي گرافيك تشتک سازان تهران طراحي گرافيك  بپردازم "
+      about:"بنده از سال 1388 در حوزه طراحی گرافيك فعالیت داشتم و موفق شدم در شرکت طراحي گرافيك تشتک سازان تهران طراحي گرافيك  بپردازم ",
+      Profileimg: "Teacher1.png"
       
     },
 
@@ -59,7 +63,9 @@ const initialState: MasterState = {
       followers: "200",
       courseCount: "50",
       field: "مدل سازی",
-      about:"بنده از سال 1398 در حوزه طراحی 3 بعدی فعالیت داشتم و موفق شدم در شرکت بازی سازی تشتک سازان تبریز، مدل سازی کنم"
+      about:"بنده از سال 1398 در حوزه طراحی 3 بعدی فعالیت داشتم و موفق شدم در شرکت بازی سازی تشتک سازان تبریز، مدل سازی کنم",
+      Profileimg: "Teacher2.png"
+
       
     }
   ],
@@ -80,7 +86,9 @@ export const MastersSlice = createSlice({
         followers: null,
         courseCount: null,
         field: null, 
-        about:null
+        about:null,
+        Profileimg: null,
+
       });
       console.log(action.payload)
     },

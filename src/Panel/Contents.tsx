@@ -4,7 +4,7 @@ import './Panel.css'
 function Contents() {
   return (
     <div style={{ display: "flex" , justifyContent: "center", alignItems: "center"}}>
-      <div >
+      <div  >
         <div  className='Content1'>
           <div className='ContentTxt'>محتوای مربوط به بیشجو</div>
         </div>
